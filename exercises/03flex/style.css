@@ -1,0 +1,108 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:darkmagenta
+
+}
+
+   
+
+
+
+header, footer, #main-content {
+    padding: 5px;
+    margin: 10px 0px;
+    background:white;
+    border-radius: 5px;
+}
+
+
+.pic-area {
+    background:#163359;
+    padding:5px;
+    border-radius:5px;
+    margin:10px auto;
+    color:white;
+}
+
+/* Turn the image into a block level element so we can center it */
+.pic-area img {
+    display:block;
+    margin:auto;
+}
+
+/* Images */
+img {
+    max-width:100%;
+}
+
+
+/* Navigation */
+
+
+
+/* Typography */
+h1, h2 {
+    text-align: center;
+}
+
+
+
+/* Media Queries */
+/* Portrait Tablet */
+@media screen and (min-width: 600px) {
+     header, footer, #side-and-main {
+        width:85%;
+        margin:10px auto;
+    }
+
+    /* Columns */
+    .columns {
+        display:flex;
+    }
+
+    .pic-area {
+        margin:0 10px 10px;
+    }
+}
+
+/* Landscape Tablet */
+@media screen and (min-width: 768px) {
+      header, footer, #side-and-main {
+        width:85%;
+        margin:10px auto;
+    }
+
+    /* Columns */
+    .columns {
+        display:flex;
+    }
+
+    .pic-area {
+        margin:0 10px 10px;
+    }
+}
+ 
+
+    
+
+
+    
+
+
+
+/* Labtop / Desktop */
+@media screen and (min-width: 992px) {
+       header, footer, #side-and-main {
+        width:70%;
+    }
+}
+
+
+
+
+/* Extra Large Devices */
+@media screen and (min-width: 1200px) {
+
+
+}
