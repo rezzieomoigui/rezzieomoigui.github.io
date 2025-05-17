@@ -1,0 +1,57 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:darkmagenta
+
+}
+
+
+
+header, footer, #main-content {
+    padding: 5px;
+    margin: 10px 0px;
+    background:white;
+    border-radius: 5px;
+}
+
+/* Navigation */
+
+
+
+/* Typography */
+
+
+
+
+/* Media Queries */
+/* Portrait Tablet */
+@media screen and (min-width: 600px) {
+    body {
+        background-color:hotpink;
+    }
+
+}
+
+/* Landscape Tablet */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: beige;
+    }
+
+}
+
+/* Labtop / Desktop */
+@media screen and (min-width: 992px) {
+    header, footer, #main-content{
+        width:850%;
+        margin:10 px auto;
+    }
+}
+
+
+
+/* Extra Large Devices */
+@media screen and (min-width: 1200px) {
+
+
+}
