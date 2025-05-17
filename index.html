@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Web Page</title>
-        <link rel="stylesheet" href="styles.css">
-
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- Make sure this is "style.css", not "styles.css" -->
+</head>
+<body>
+    <div id="main-container">
         <header>
             <h1>Welcome to My Web Page</h1>
         </header>
@@ -15,18 +15,24 @@
         <main>
             <section>
                 <h2>About Me</h2>
-                <p>This is a paragraph about me.</p>
+                <p id="welcome-text">This is a paragraph about me.</p>
             </section>
 
             <section>
                 <h2>Assignments</h2>
                 <ol>
-                    <li><a href="assignments/assignment01/index.html">html</a></li>
-                    <li><a href="assignments/assignment02/index.html">css</a></li>
-                    <li><a href="assignments/assignment03/index.html">flex</a></li>
-                    <li><a href="exercises/03flex/index.html">flex</a></li>
-                    <li><a href="excersices/01html/index.html">01html</a></li>
+                    <li><a class="assignment-link" href="assignments/assignment01/index.html">Assignment 01 - HTML</a></li>
+                    <li><a class="assignment-link" href="assignments/assignment02/index.html">Assignment 02 - CSS</a></li>
+                    <li><a class="assignment-link" href="assignments/assignment03/index.html">Assignment 03 - Flexbox</a></li>
+                    <li><a class="assignment-link" href="exercises/03flex/index.html">Exercise - Flex</a></li>
+                    <li><a class="assignment-link" href="exercises/01html/index.html">Exercise - HTML</a></li>
                 </ol>
             </section>
-    </body>
+        </main>
+
+        <div id="footer">
+            &copy; 2025 My Pretty Site • Built with 💅 in Y2K style
+        </div>
+    </div>
+</body>
 </html>

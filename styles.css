@@ -1,80 +1,104 @@
-h1{
-    color:magenta;
-}
-/* Import a cute Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+/* Cute Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-/* Reset and basics */
+/* Global styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #ffeaf4;
-  color: #4b2c3b;
+  font-family: 'Orbitron', sans-serif;
+  background-image: url('https://i.imgur.com/Pz1F2ow.jpg'); /* Light aesthetic background */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #5e0035;
 }
 
-/* Centered content container */
+/* Main content container */
 #main-container {
-  background-color: #fff0f5;
+  background: rgba(255, 240, 250, 0.92);
   max-width: 900px;
-  margin: 40px auto;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(255, 192, 203, 0.4);
+  margin: 50px auto;
+  padding: 40px;
+  border: 3px double #ffb6d9;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 150, 200, 0.5);
 }
 
-/* Main heading */
+/* Page title */
 h1 {
   text-align: center;
-  color: #d63384;
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  color: #d90077;
+  font-size: 3em;
+  text-shadow: 1px 1px #ffcbe9;
+  margin-bottom: 20px;
+  border-bottom: 2px dashed #ff99cc;
+  padding-bottom: 10px;
 }
 
-/* Navigation bar */
+/* Navigation */
 nav {
-  background-color: #f8c6dc;
-  padding: 12px;
-  border-radius: 10px;
+  background-color: #ffe3f1;
+  padding: 15px;
+  border-radius: 15px;
   text-align: center;
-  margin-bottom: 20px;
+  border: 2px solid #ffcbe9;
+  margin-bottom: 30px;
 }
 
 nav a {
-  color: #8b005d;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: 600;
-  padding: 8px 14px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+  color: #b2006d;
+  margin: 0 20px;
+  font-weight: bold;
+  padding: 10px 16px;
+  background-color: #ffd9ec;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #ffb6c1;
+  background-color: #ffaad5;
+  color: #fff;
+  border-color: #ff69b4;
 }
 
-/* Links to assignments */
+/* Assignment links */
 .assignment-link {
   display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #ffe0eb;
-  border-radius: 12px;
+  margin: 15px;
+  padding: 14px 28px;
+  background-color: #ffe0f5;
+  border: 2px solid #ffaad5;
+  border-radius: 15px;
   text-decoration: none;
-  color: #a3155c;
+  color: #d63384;
+  font-size: 1.2em;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 .assignment-link:hover {
-  background-color: #ffc5d9;
-  color: #fff;
+  background-color: #ffb6d9;
+  color: white;
+  border-color: #ff69b4;
 }
 
-/* Custom IDs (example) */
+/* Paragraphs */
 #welcome-text {
   font-size: 1.1em;
-  line-height: 1.6;
+  line-height: 1.7;
+  padding: 15px;
+  background-color: #fff7fb;
+  border-left: 5px solid #ff9ac2;
+  border-radius: 10px;
   margin-top: 20px;
+}
+
+/* Footer or additional info (optional) */
+#footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #aa4679;
+  margin-top: 40px;
 }
