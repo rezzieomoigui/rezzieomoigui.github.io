@@ -1,104 +1,46 @@
-/* Cute Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
-/* Global styles */
+/* Use a prettier, modern font */
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
-  font-family: 'Orbitron', sans-serif;
-  background-image: url('https://i.imgur.com/Pz1F2ow.jpg'); /* Light aesthetic background */
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: #5e0035;
+  background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+  color: #333;
 }
 
-/* Main content container */
-#main-container {
-  background: rgba(255, 240, 250, 0.92);
+/* Center content in a formatted box */
+#main-content {
+  background-color: white;
+  width: 80%;
   max-width: 900px;
-  margin: 50px auto;
-  padding: 40px;
-  border: 3px double #ffb6d9;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(255, 150, 200, 0.5);
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Page title */
+/* Styled header */
 h1 {
   text-align: center;
-  color: #d90077;
-  font-size: 3em;
-  text-shadow: 1px 1px #ffcbe9;
-  margin-bottom: 20px;
-  border-bottom: 2px dashed #ff99cc;
-  padding-bottom: 10px;
+  color: #5d3a00;
 }
 
-/* Navigation */
-nav {
-  background-color: #ffe3f1;
-  padding: 15px;
-  border-radius: 15px;
-  text-align: center;
-  border: 2px solid #ffcbe9;
-  margin-bottom: 30px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #b2006d;
-  margin: 0 20px;
-  font-weight: bold;
-  padding: 10px 16px;
-  background-color: #ffd9ec;
-  border-radius: 10px;
-  border: 2px solid transparent;
+/* Assignment links styling */
+#assignments a {
+  text-decoration: none;         /* Removes underline */
+  color: #7a4e24;                /* Stylish warm brown */
+  display: block;
+  margin: 10px 0;
   transition: all 0.3s ease;
 }
 
-nav a:hover {
-  background-color: #ffaad5;
-  color: #fff;
-  border-color: #ff69b4;
+#assignments a:hover {
+  color: #bf6b30;
+  transform: translateX(5px);
 }
 
-/* Assignment links */
-.assignment-link {
-  display: inline-block;
-  margin: 15px;
-  padding: 14px 28px;
-  background-color: #ffe0f5;
-  border: 2px solid #ffaad5;
-  border-radius: 15px;
-  text-decoration: none;
-  color: #d63384;
-  font-size: 1.2em;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.assignment-link:hover {
-  background-color: #ffb6d9;
-  color: white;
-  border-color: #ff69b4;
-}
-
-/* Paragraphs */
-#welcome-text {
-  font-size: 1.1em;
-  line-height: 1.7;
+/* Use a consistent color theme */
+#assignments {
+  background-color: #fff8f0;
   padding: 15px;
-  background-color: #fff7fb;
-  border-left: 5px solid #ff9ac2;
+  border-left: 4px solid #d9a066;
   border-radius: 10px;
-  margin-top: 20px;
-}
-
-/* Footer or additional info (optional) */
-#footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #aa4679;
-  margin-top: 40px;
 }

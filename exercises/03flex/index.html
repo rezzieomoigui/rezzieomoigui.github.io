@@ -1,44 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>FlexBox Example</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div id="content">
-            <header>
-                <h1>Let's Make Columns</h1>
-            </header>
-            <div id="side-and-main" class="columns">
-                <aside id="side navigation">
-                    <h2>Interesting Articles</h2>
-                    <ul>
-                        <li>Article 1</li>
-                        <li>Article 2</li>
-                        <li>Article 3</li>
-                        <li>Article 4</li>
-                    </ul>
-                </aside>
-                <main id="main-content">
-                    <h2>My Main Heading</h2>
-                    <div class="columns">
-                        <section class="pic-area">
-                            <h2>Section Title</h2>
-                            <img src="https://picsum.photos/600/300">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus tincidunt augue, ut consectetur tellus tincidunt ut. Morbi lobortis turpis massa, id scelerisque nisi auctor sed.</p>
-                        </section>
-                        <section class="pic-area">
-                            <h2>Section Title</h2>
-                            <img src="https://picsum.photos/300/300">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus tincidunt augue, ut consectetur tellus tincidunt ut. Morbi lobortis turpis massa, id scelerisque nisi auctor sed.</p>
-                        </section>
-                    </div>
-    
-                </main>
-            </div>
-            <footer>
-                <p>&copy; portiaportia</p>
-            </footer>
-        </div>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Styled Website</title>
+  <style>
+    /* Use a prettier, modern font */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+      color: #333;
+    }
+
+    /* Center content in a formatted box */
+    #main-content {
+      background-color: white;
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styled header */
+    h1 {
+      text-align: center;
+      color: #5d3a00;
+    }
+
+    /* Assignment links styling */
+    #assignments a {
+      text-decoration: none;         /* Removes underline */
+      color: #7a4e24;                /* Stylish warm brown */
+      display: block;
+      margin: 10px 0;
+      transition: all 0.3s ease;
+    }
+
+    #assignments a:hover {
+      color: #bf6b30;
+      transform: translateX(5px);
+    }
+
+    /* Use a consistent color theme */
+    #assignments {
+      background-color: #fff8f0;
+      padding: 15px;
+      border-left: 4px solid #d9a066;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="main-content">
+    <h1>Welcome to My Assignments Page</h1>
+    <div id="assignments">
+      <a href="assignment1.html" id="assignment1">Assignment 1</a>
+      <a href="assignment2.html" id="assignment2">Assignment 2</a>
+      <a href="assignment3.html" id="assignment3">Assignment 3</a>
+    </div>
+  </div>
+</body>
 </html>
