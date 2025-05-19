@@ -1,12 +1,12 @@
 body {
   background-color: #f0faff;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #ffffff;
   padding: 20px;
 }
 
 h1, h2 {
-  color: #00c2cb;
+  color: #a3faff;
 }
 
 img {
@@ -19,7 +19,7 @@ img {
 ul {
   background-color: #e6faff;
   padding: 10px 20px;
-  border-left: 5px solid #00c2cb;
+  border-left: 5px solid #075357;
   list-style-type: disc;
 }
 
@@ -31,7 +31,7 @@ table {
 }
 
 table, th, td {
-  border: 1px solid #00c2cb;
+  border: 1px solid #5ef7ff;
 }
 
 th, td {
@@ -40,11 +40,11 @@ th, td {
 }
 
 a {
-  color: #00c2cb;
+  color: #a4cbcd;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #009fa7;
+  color: #f0feff;
 }
