@@ -1,67 +1,77 @@
-/* Base Styles */
+/* Body element style with background image */
 body {
-  background-color: #fff0f5; /* light pink */
-  font-family: 'Segoe UI', sans-serif;
-  color: #4a4a4a;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
-/* Header & Navigation */
+/* Wrapper for readable content area */
+#wrapper {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
+}
+
+/* Header style (element selector) */
 header {
-  background-color: #ff69b4; /* hot pink */
-  padding: 20px;
+  background-color: #ffb6c1;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+  padding: 20px;
+  border-radius: 15px;
 }
 
+/* Header title */
 header h1 {
   color: #ffffff;
   font-size: 2.5rem;
   margin: 0;
-  font-weight: bold;
   letter-spacing: 1px;
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 15px;
+  display: inline-block;
+  margin: 0 12px;
 }
 
 nav a {
-  color: #fff;
+  background-color: #fff0f5;
+  padding: 10px 16px;
+  border-radius: 25px;
+  color: #ff1493;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #ff69b4;
+  color: #fff;
 }
 
-/* Main Content */
-main {
-  padding: 30px;
-  background-color: #fff8fb;
-}
-
-h2 {
+/* Subheader styled using class */
+.subheader {
   color: #ff69b4;
-  margin-top: 40px;
   font-size: 1.8rem;
-  border-bottom: 2px dashed #ffb6c1;
-  padding-bottom: 5px;
+  border-bottom: 2px dotted #ffc0cb;
+  margin-top: 40px;
 }
 
-/* Paragraphs */
+/* Paragraphs (element selector) */
 p {
-  font-size: 1rem;
   line-height: 1.7;
   margin-bottom: 20px;
 }
@@ -72,54 +82,47 @@ p {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .gallery img {
   width: 280px;
   height: auto;
   border-radius: 15px;
-  border: 3px solid #ffc0cb;
+  border: 5px solid #ffc0cb;
   box-shadow: 0 8px 16px rgba(255, 182, 193, 0.4);
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
   transform: scale(1.05);
 }
 
-/* Table */
+/* Table styling (element selector) */
 table {
   width: 100%;
   border-collapse: collapse;
   background-color: #fff0f5;
   border: 2px solid #ffb6c1;
   margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-table th, table td {
-  padding: 12px;
+th, td {
+  padding: 15px;
   text-align: center;
   border: 1px solid #ffb6c1;
 }
 
 th {
-  background-color: #ffe4e1;
-  color: #d63384;
+  background-color: #ffb6c1;
+  color: white;
   font-weight: bold;
 }
 
 td {
-  background-color: #fffafc;
+  background-color: #fffafd;
 }
 
-/* Links */
-a {
-  color: #d63384;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ff69b4;
-  text-decoration: underline;
-}
+/* ID selector example (already used: #wrapper) */
