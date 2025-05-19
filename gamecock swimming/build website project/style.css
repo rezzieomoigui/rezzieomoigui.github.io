@@ -9,8 +9,12 @@ body {
   color: white;
   display: flex;
   align-items: center;
-  padding: 20px 40px;
+  padding: 60px 80px;
   justify-content: space-between;
+}
+
+section  {
+
 }
 
 .logo img {
