@@ -11,10 +11,15 @@ body {
   align-items: center;
   padding: 40px 60px;
   justify-content: flex-start;  
-  align-items: center;     
+  align-items: flex;     
   text-align: center;
 }
 
+.content-box {
+  background-color: #000000;
+  padding: 30px;
+  flex-grow: 1; /* Takes up remaining space */
+}
 
 .logo img {
   height: 50px;
