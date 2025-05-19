@@ -23,19 +23,19 @@ h1, h2 {
 #assignments {
   background-color: #e8bbda;
   padding: 15px 25px;
-  border-left: 5px solid #350321;
+  border-left: 5px solid #ffa7dc;
   border-radius: 10px;
 }
 
 #assignments a {
   text-decoration: none;
-  color: #340844;
+  color: #e9abff;
   display: block;
   margin: 10px 0;
   transition: 0.3s ease;
 }
 
 #assignments a:hover {
-  color: #62024c;
+  color: #ffc4f1;
   transform: translateX(5px);
 }
