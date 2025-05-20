@@ -21,6 +21,10 @@ h1, h2 {
   color: #fa43d8;
 }
 
+h3 {
+  text-align:left
+}
+
 #assignments {
   background-color: #e8bbda;
   padding: 15px 25px;
