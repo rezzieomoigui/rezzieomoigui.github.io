@@ -9,7 +9,7 @@ body {
   color: white;
   display: flex;
   align-items: center;
-  padding: 25px 40px;
+  padding: 25px 50px;
   justify-content: flex-start;  
   align-items: flex;     
 
@@ -48,6 +48,7 @@ body {
   font-weight: bold;
   padding: 40px 44px;
   transition: background 0.3s;
+  text-align: center;
 }
 
 .main-nav li a:hover {
