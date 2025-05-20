@@ -23,6 +23,10 @@ body {
   font-size: 5px;
   text-align: center;
 }
+.section img {
+  height: 20px;
+  justify-content: left;
+}
 
 .logo img {
   height: 50px;
