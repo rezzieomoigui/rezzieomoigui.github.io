@@ -35,11 +35,6 @@ body {
   justify-content: center;
 }
 
-.navigation {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 .navigation ul {
   list-style: none;
