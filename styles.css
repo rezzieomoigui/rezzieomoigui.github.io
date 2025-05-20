@@ -3,6 +3,7 @@ body {
   margin: 0;
   background: linear-gradient(to bottom right, #f3c0e8, #f7dcea);
   color: #000000;
+  text-align: center;
 }
 
 #main-content {
