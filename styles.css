@@ -1,48 +1,87 @@
+/* General page styles */
 body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff0f5;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  color: #5a003d;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
+/* Wrapper div to center and contain all content */
+#page-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #ffe4ec;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
 }
 
-.intro {
+/* Header section styles */
+.intro h1 {
   text-align: center;
-  max-width: 700px;
-  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: #d63384;
 }
 
+.intro h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #c71585;
+}
+
+.intro p {
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Assignment section styles */
 .assignments {
-  text-align: left;
-  max-width: 600px;
-  width: 100%;
-  background-color: #ffffff;
+  margin-top: 40px;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffeaf4;
+  border: 2px dashed #ffb6c1;
+  border-radius: 15px;
 }
 
 .assignments h2 {
-  margin-top: 0;
+  color: #db3a77;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+/* Assignment list styles */
 .assignments ul {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-.assignments a {
+.assignments li a {
   text-decoration: none;
-  color: #3366cc;
+  background-color: #ffc0cb;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.assignments a:hover {
-  text-decoration: underline;
+.assignments li a:hover {
+  background-color: #ff69b4;
+}
+
+/* ID examples for future reference */
+#main-title {
+  color: #ff1493;
+}
+
+#assignment-links {
+  background-color: #fff;
 }
 
