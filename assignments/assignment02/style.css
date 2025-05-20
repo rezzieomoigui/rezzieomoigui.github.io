@@ -1,6 +1,6 @@
 /* Body element style with background image */
 body {
-  background-image: url('fashion\ jpeg.jpg');
+  background-image: url('fashion.run.jpg');
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Quicksand', sans-serif;
