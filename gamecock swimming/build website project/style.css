@@ -20,7 +20,7 @@ body {
   padding: 35px;
   flex-grow: 1; /* Takes up remaining space */
   display: flex;
-  font-size: 2px;
+  font-size: 0.5px;
   text-align: center;
 }
 .section img {
