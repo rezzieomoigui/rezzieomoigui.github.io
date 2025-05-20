@@ -30,6 +30,8 @@ body {
 
 .logo img {
   height: 50px;
+  display: block;
+  margin-left: 0;
   justify-content: center;
 }
 
