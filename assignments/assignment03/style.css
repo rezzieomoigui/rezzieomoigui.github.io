@@ -1,57 +1,137 @@
-/* Structure */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:darkmagenta
+ * {
+      box-sizing: border-box;
+    }
 
-}
-
-
-
-header, footer, #main-content {
-    padding: 5px;
-    margin: 10px 0px;
-    background:white;
-    border-radius: 5px;
-}
-
-/* Navigation */
-
-
-
-/* Typography */
-
-
-
-
-/* Media Queries */
-/* Portrait Tablet */
-@media screen and (min-width: 600px) {
     body {
-        background-color:hotpink;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7e8;
     }
 
-}
-
-/* Landscape Tablet */
-@media screen and (min-width: 768px) {
-    body {
-        background-color: beige;
+    header {
+      background-color: #5f8b8a;
+      color: white;
+      padding: 1rem;
+      text-align: center;
     }
 
-}
-
-/* Labtop / Desktop */
-@media screen and (min-width: 992px) {
-    header, footer, #main-content{
-        width:850%;
-        margin:10 px auto;
+    nav {
+      display: flex;
+      background-color: #d67f7f;
+      flex-wrap: wrap;
     }
-}
 
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
 
+    nav li {
+      flex: 1;
+      text-align: center;
+      padding: 1rem;
+      border-right: 1px solid white;
+    }
 
-/* Extra Large Devices */
-@media screen and (min-width: 1200px) {
+    nav li:last-child {
+      border-right: none;
+    }
 
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-}
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    aside {
+      flex: 1 1 200px;
+      background-color: #d67f7f;
+      padding: 1rem;
+      color: white;
+    }
+
+    aside ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    aside li {
+      margin-bottom: 0.5rem;
+    }
+
+    .content {
+      flex: 4;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    article {
+      flex: 1 1 300px;
+      background-color: #6a9497;
+      padding: 1rem;
+      color: white;
+    }
+
+    article img {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #d67f7f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Flexbox Grid Sections */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem;
+    }
+
+    .grid .card {
+      flex: 1 1 300px;
+      background-color: #6a9497;
+      padding: 1rem;
+      color: white;
+    }
+
+    .grid .card img {
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    /* Responsive Nav: vertical on small screens */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav li {
+        border-right: none;
+        border-bottom: 1px solid white;
+      }
+
+      nav li:last-child {
+        border-bottom: none;
+      }
+
+      .container {
+        flex-direction: column;
+      }
+    }
