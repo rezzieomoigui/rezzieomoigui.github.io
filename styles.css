@@ -7,7 +7,7 @@ body {
   color: #5a003d;
 }
 
-/* Wrapper div to center and contain all content */
+/* Wrapper to center and contain content */
 #page-wrapper {
   max-width: 900px;
   margin: 40px auto;
@@ -17,7 +17,21 @@ body {
   box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
 }
 
-/* Header section styles */
+/* Header styles */
+header, footer {
+  text-align: center;
+  background-color: #ffb6c1;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+header h1, footer p {
+  margin: 0;
+}
+
+/* Intro section */
 .intro h1 {
   text-align: center;
   font-size: 2.5rem;
@@ -38,7 +52,7 @@ body {
   line-height: 1.6;
 }
 
-/* Assignment section styles */
+/* Assignments container */
 .assignments {
   margin-top: 40px;
   padding: 20px;
@@ -50,38 +64,87 @@ body {
 .assignments h2 {
   color: #db3a77;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /* Assignment list styles */
-.assignments ul {
+.assignment-list {
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.assignments li a {
+/* Each assignment */
+.assignment-list li {
+  background-color: #fffafc;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #ffc0cb;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+}
+
+.assignment-list li a {
   text-decoration: none;
   background-color: #ffc0cb;
-  color: #fff;
-  padding: 12px 20px;
+  color: white;
+  padding: 10px 16px;
   border-radius: 25px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  flex-shrink: 0;
 }
 
-.assignments li a:hover {
+.assignment-list li a:hover {
   background-color: #ff69b4;
 }
 
-/* ID examples for future reference */
-#main-title {
-  color: #ff1493;
+/* Image + description block */
+.assignment-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
 }
 
-#assignment-links {
-  background-color: #fff;
+.assignment-content img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #ffc0cb;
+  border-radius: 10px;
 }
+
+.assignment-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #5a003d;
+}
+
+/* Responsive layout for mobile */
+@media screen and (max-width: 768px) {
+  .assignment-list li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .assignment-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .assignment-content {
+    align-items: center;
+  }
+
+  .assignment-list {
+    gap: 30px;
+  }
+}
+
 
