@@ -1,2 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y2K Dream Closet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>✨ Y2K Dream Closet ✨</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Style Gallery</a></li>
+        <li><a href="shop.html">Shop the Look</a></li>
+        <li><a href="beauty.html">Beauty Tips</a></li>
+        <li><a href="closet.html">My Closet</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section class="slideshow">
+      <img src="images/y2k1.jpg" class="slide" alt="Y2K Outfit 1">
+      <img src="images/y2k2.jpg" class="slide" alt="Y2K Outfit 2">
+      <img src="images/y2k3.jpg" class="slide" alt="Y2K Outfit 3">
+    </section>
+    <h2>Welcome to Your Dream Closet 💖</h2>
+    <p>Explore iconic Y2K fashion, shop vintage-inspired pieces, and create your very own style boards.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Y2K Dream Closet. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simple slideshow script
+    let slides = document.querySelectorAll(".slide");
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? "block" : "none";
+      });
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+
+    setInterval(nextSlide, 3000);
+    showSlide(current);
+  </script>
+</body>
+</html>
 

@@ -1,0 +1,72 @@
+/* Y2K Dream Closet CSS */
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom right, #ffe6f2, #f0ccff);
+  color: #660066;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffb3ec;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px double #cc66cc;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px #cc66cc;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #cc66cc;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #993399;
+}
+
+main {
+  text-align: center;
+  padding: 30px;
+}
+
+.slideshow {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  border: 4px dotted #ff99cc;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: #ffb3ec;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #660066;
+}
