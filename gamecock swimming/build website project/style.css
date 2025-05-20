@@ -35,6 +35,20 @@ body {
   justify-content: center;
 }
 
+.navigation {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
 .main-nav ul {
   list-style: none;
   margin: 0;
