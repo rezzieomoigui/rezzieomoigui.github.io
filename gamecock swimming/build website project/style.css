@@ -20,6 +20,7 @@ body {
   padding: 30px;
   flex-grow: 1; /* Takes up remaining space */
   font-size: 5px;
+  text-align: center;
 }
 
 .logo img {
