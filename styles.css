@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   background: linear-gradient(to bottom right, #f3c0e8, #f7dcea);
-  color: #fde2f7;
+  color: #000000;
 }
 
 #main-content {
@@ -17,7 +17,7 @@ body {
 
 h1, h2 {
   text-align: center;
-  color: #ff84f1;
+  color: #fa43d8;
 }
 
 #assignments {
