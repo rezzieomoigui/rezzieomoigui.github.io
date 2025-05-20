@@ -1,47 +1,48 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background: linear-gradient(to bottom right, #f3c0e8, #f7dcea);
-  color: #000000;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
 }
 
-#main-content {
-  background-color: rgb(247, 198, 228);
-  width: 80%;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
 }
 
-h1, h2 {
+.intro {
   text-align: center;
-  color: #fa43d8;
+  max-width: 700px;
+  margin-bottom: 50px;
 }
 
-#content {
-text-align: left;
-}
-  text-align:left
-
-
-#assignments {
-  background-color: #e8bbda;
-  padding: 15px 25px;
-  border-left: 5px solid #ffa7dc;
-  border-radius: 10px;
+.assignments {
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-#assignments a {
+.assignments h2 {
+  margin-top: 0;
+}
+
+.assignments ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.assignments a {
   text-decoration: none;
-  color: #e9abff;
-  display: block;
-  margin: 10px 0;
-  transition: 0.3s ease;
+  color: #3366cc;
 }
 
-#assignments a:hover {
-  color: #ffc4f1;
-  transform: translateX(5px);
+.assignments a:hover {
+  text-decoration: underline;
 }
+
