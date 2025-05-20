@@ -20,9 +20,11 @@ h1, h2 {
   color: #fa43d8;
 }
 
-.content {
-  text-align:left
+#content {
+text-align: left;
 }
+  text-align:left
+
 
 #assignments {
   background-color: #e8bbda;
