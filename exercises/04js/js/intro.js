@@ -27,3 +27,9 @@ document.getElementById("btn-end").onclick = (event) => {
     document.getElementById("endp").innerHTML = "Ended";
     event.target.innerHTML = "Ending";
 }
+
+const writeParagraph = () => {
+    console.log("Hello");
+}
+
+document.getElementById("txt-name").onkeyup = writeParagraph;
