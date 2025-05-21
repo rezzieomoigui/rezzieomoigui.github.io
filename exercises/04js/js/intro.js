@@ -30,5 +30,5 @@ document.getElementById("btn-end").onclick = (event) => {
 
 
 document.getElementById("txt-name").onkeyup = (event) => {
-    console.log(event.target.value);
+  
 };
