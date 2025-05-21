@@ -1,172 +1,154 @@
-/* Structure */
+/* Base Styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #E6E6FA; /* Light Lavender */
-}
-
-header, .main-area {
-    padding: 5px;
-    margin: 10px 0px;
-    background: #FFFFFF;
-    border-radius: 5px;
-}
-
-#footer-main {
-    padding: 0px;
-    margin: 10px auto;
-    background: #FFFFFF;
-    border-radius: 5px;
-    position: relative;
-}
-
-#footer-banner {
-    border-radius: 5px;
-    padding: 5px;
-    color: white;
-    background: #4B0082; /* Indigo Purple */
-}
-
-#footer-banner p {
-    position: absolute;
-    top: 0;
-    right: 5px;
-}
-
-#footer-info ul {
-    padding-left: 0;
-    background: #D8BFD8; /* Thistle */
-    padding: 10px 0;
-    margin: 10px;
-}
-
-#footer-info li {
-    list-style-type: none;
-    text-align: center;
-}
-
-#footer-info2 section {
-    padding: 5px;
-    margin: 10px;
-    background: #DDA0DD; /* Plum */
-}
-
-#footer-images section {
-    flex: 1;
-    margin: 1%;
-    text-align: center;
-}
-
-aside {
-    background: #E6E6FA; /* Light Lavender */
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.pic-area {
-    background: #4B0082; /* Indigo Purple */
-    padding: 5px;
-    border-radius: 5px;
-    margin: 10px auto;
-    color: white;
-}
-
-.pic-area img {
-    display: block;
-    margin: auto;
-}
-
-/* Gallery */
-#gallery section {
-    background-color: #9370DB; /* Medium Purple */
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-/* Images */
-img {
-    max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #E6E6FA; /* Lavender */
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 header {
-    position: relative;
-    min-height: 150px;
+  background-color: #4B0082; /* Indigo */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
 }
 
 #logo {
-    border: 2px solid gold;
-    position: absolute;
-    left: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 2px solid gold;
+  border-radius: 50%;
 }
 
 #sub-header {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-style: italic;
 }
 
-/* Typography */
-h1, h2 {
-    text-align: center;
+.main-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
-/* Media Queries */
-/* Portrait Tablet */
-@media screen and (min-width: 600px) {
-    
+.sidebar {
+  flex: 1;
+  background-color: #D8BFD8; /* Thistle */
+  padding: 20px;
+  border-radius: 5px;
+  margin-right: 20px;
 }
 
-/* Landscape Tablet */
-@media screen and (min-width: 768px) {
-    header, footer, .main-area {
-        width: 85%;
-        margin: 10px auto;
-    }
-
-    .columns {
-        display: flex;
-    }
-
-    .pic-area {
-        margin: 0 10px 10px;
-    }
-
-    #gallery {
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    #gallery section {
-        max-width: 20%;
-    }
-
-    .one {
-        flex: 1;
-    }
-
-    .two {
-        flex: 2;
-    }
-
-    .three {
-        flex: 3;
-    }
-
-    .four {
-        flex: 4;
-    }
+.content {
+  flex: 3;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-/* Laptop / Desktop */
-@media screen and (min-width: 992px) {
-    header, footer, .main-area {
-        width: 70%;
-    }
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* Extra Large Devices */
-@media screen and (min-width: 1600px) {
-    
+.card {
+  background-color: #9370DB; /* Medium Purple */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.gallery {
+  background-color: #E6E6FA;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery .columns {
+  justify-content: center;
+}
+
+.gallery-item {
+  background-color: #DDA0DD; /* Plum */
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #4B0082;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-banner {
+  margin-bottom: 20px;
+}
+
+.footer-info {
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-images {
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-images img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-area {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  .footer-images {
+    flex-direction: column;
+  }
+
+  .footer-images img {
+    width: 100%;
+  }
 }
 
 
