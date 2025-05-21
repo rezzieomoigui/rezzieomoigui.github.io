@@ -118,9 +118,34 @@ header h1, footer p {
   color: #5a003d;
 }
 
+/* Projects section - same structure as assignments */
+.projects {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffeaf4;
+  border: 2px dashed #ffb6c1;
+  border-radius: 15px;
+}
+
+.projects h2 {
+  color: #db3a77;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 /* Responsive fallback */
 @media screen and (max-width: 768px) {
-  .assignment-list {
+  .assignment-list,
+  .project-list {
     flex-direction: column;
     align-items: center;
   }
@@ -129,4 +154,5 @@ header h1, footer p {
     width: 90%;
   }
 }
+
 
