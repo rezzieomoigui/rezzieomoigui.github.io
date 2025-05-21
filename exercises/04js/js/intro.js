@@ -17,3 +17,8 @@ document.getElementById("btn-write").onclick = (event) => {
 
     event.target.innerHTML = "done";
 };
+
+document.getElementById("btn-start").onclick = (event) => {
+    document.getElementById("startp").innerHTML = "Started";
+    event.target.innerHTML = "Starting";
+};
