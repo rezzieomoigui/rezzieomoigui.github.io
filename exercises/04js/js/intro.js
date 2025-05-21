@@ -9,5 +9,5 @@ document.getElementById("btn-write").onclick = writeParagraph;
 */
 
 document.getElementById("btn-write").onclick = () => {
-    console.log("Hello Everyone!");
+    console.log("Hello World!");
 };
