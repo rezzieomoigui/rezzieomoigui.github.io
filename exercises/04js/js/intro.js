@@ -3,4 +3,4 @@ function writeParagraph() {
     console.log("Hello Everyone!");
 } 
 
-document.getElementById("btn-write").onclick = writeParagraph()
+document.getElementById("btn-write").onclick = writeParagraph;
