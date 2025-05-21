@@ -28,9 +28,6 @@ document.getElementById("btn-end").onclick = (event) => {
     event.target.innerHTML = "Ending";
 }
 
-const writeParagraph = () => {
-    console.log("Hello");
-};
 
 document.getElementById("txt-name").onkeyup = (event) => {
     console.log(event.target.value);
