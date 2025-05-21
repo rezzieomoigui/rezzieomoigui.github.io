@@ -10,4 +10,7 @@ document.getElementById("btn-write").onclick = writeParagraph;
 
 document.getElementById("btn-write").onclick = () => {
     document.getElementById("writep").innerHTML = "You clicked the button";
+
+    /* change the button text to say done */
+    document.getElementById("btn-write").innerHTML = "Done";
 };
