@@ -1,72 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Page Layout</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Cat Breeds</h1>
-  </header>
+<html>
+    <head>
+        <title>FlexBox Example</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="https://picsum.photos/150/150">
+            <h1>Let's Make Columns</h1>
+            <p id="sub-header">Hello</p>
+        </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Staff</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
+        <div class="main-area columns">
+            <aside id="side-navigation" class="one">
+                <h2>Interesting Articles</h2>
+                <ul>
+                    <li>Article 1</li>
+                    <li>Article 2</li>
+                    <li>Article 3</li>
+                    <li>Article 4</li>
+                </ul>
+            </aside>
 
-  <section class="main-content">
-    <aside>
-      <h2>Explore</h2>
-      <ul>
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
-        <li><a href="#">Item 4</a></li>
-      </ul>
-    </aside>
+            <main id="main-content" class="four">
+                <h2>My Main Heading</h2>
+                <div class="columns">
+                    <section class="pic-area one">
+                        <h2>Section Title</h2>
+                        <img src="https://picsum.photos/600/300">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus tincidunt augue, ut consectetur tellus tincidunt ut. Morbi lobortis turpis massa, id scelerisque nisi auctor sed.</p>
+                    </section>
+                    <section class="pic-area one">
+                        <h2>Section Title</h2>
+                        <img src="https://picsum.photos/300/300">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus tincidunt augue, ut consectetur tellus tincidunt ut. Morbi lobortis turpis massa, id scelerisque nisi auctor sed.</p>
+                    </section>
+                </div>
+            </main>
+        </div>
 
-    <section class="columns">
-      <article>
-        <h3>Maine Coon</h3>
-        <img src="https://fakeimg.pl/600x400" alt="Maine Coon">
-        <p>Large, fluffy, and gentle cats that love people and cuddles.</p>
-      </article>
-      <article>
-        <h3>Siamese</h3>
-        <img src="https://fakeimg.pl/600x400" alt="Siamese">
-        <p>Talkative and sleek cats that form strong bonds with their owners.</p>
-      </article>
-      <article>
-        <h3>British Shorthair</h3>
-        <img src="https://fakeimg.pl/600x400" alt="British Shorthair">
-        <p>Calm and chubby-faced companions that are great with kids.</p>
-      </article>
-      <article>
-        <h3>Sphynx</h3>
-        <img src="https://fakeimg.pl/600x400" alt="Sphynx">
-        <p>Unique and hairless, the Sphynx is playful and attention-seeking.</p>
-      </article>
-      <article>
-        <h3>Bengal</h3>
-        <img src="https://fakeimg.pl/600x400" alt="Bengal">
-        <p>Wild-looking with spots, Bengals are energetic and curious.</p>
-      </article>
-      <article>
-        <h3>Persian</h3>
-        <img src="https://fakeimg.pl/600x400" alt="Persian">
-        <p>Regal and serene, Persians are lap cats with long beautiful coats.</p>
-      </article>
-    </section>
-  </section>
+        <div class="main-area columns">
+            <div class="four">
+                Gallery
+                <div id="gallery" class="columns">
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                    <section><img src="https://picsum.photos/250/250"><h3>Title</h3></section>
+                </div>
+            </div>
+            <aside class="one">
+                Aside
+                <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </aside>
+        </div>
 
-  <footer>
-    <p>&copy; 2025 CatBreedsWorld.com</p>
-  </footer>
-</body>
+        <footer id="footer-main">
+            <div id="footer-banner">
+                <h3>Footer</h3>
+                <p>Info</p>
+            </div>
+
+            <div id="footer-info" class="columns">
+                <ul class="one">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+                <ul class="one">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+                <ul class="one">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+
+            <div id="footer-info2" class="columns">
+                <section class="one"><p>Hello Everyone</p></section>
+                <section class="one"><p>Hello Everyone</p></section>
+            </div>
+
+            <div id="footer-images" class="columns">
+                <section><img src="https://picsum.photos/250/250"></section>
+                <section><img src="https://picsum.photos/250/250"></section>
+                <section><img src="https://picsum.photos/250/250"></section>
+                <section><img src="https://picsum.photos/250/250"></section>
+                <section><img src="https://picsum.photos/250/250"></section>
+                <section><img src="https://picsum.photos/250/250"></section>
+            </div>
+        </footer>
+    </body>
 </html>
+
 

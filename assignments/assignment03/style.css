@@ -1,137 +1,172 @@
-/* Base Styles */
+/* Structure */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  background-color: #f5f0ff;
-  color: #2e003e;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E6E6FA; /* Light Lavender */
+}
+
+header, .main-area {
+    padding: 5px;
+    margin: 10px 0px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+#footer-main {
+    padding: 0px;
+    margin: 10px auto;
+    background: #FFFFFF;
+    border-radius: 5px;
+    position: relative;
+}
+
+#footer-banner {
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background: #4B0082; /* Indigo Purple */
+}
+
+#footer-banner p {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+#footer-info ul {
+    padding-left: 0;
+    background: #D8BFD8; /* Thistle */
+    padding: 10px 0;
+    margin: 10px;
+}
+
+#footer-info li {
+    list-style-type: none;
+    text-align: center;
+}
+
+#footer-info2 section {
+    padding: 5px;
+    margin: 10px;
+    background: #DDA0DD; /* Plum */
+}
+
+#footer-images section {
+    flex: 1;
+    margin: 1%;
+    text-align: center;
+}
+
+aside {
+    background: #E6E6FA; /* Light Lavender */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.pic-area {
+    background: #4B0082; /* Indigo Purple */
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px auto;
+    color: white;
+}
+
+.pic-area img {
+    display: block;
+    margin: auto;
+}
+
+/* Gallery */
+#gallery section {
+    background-color: #9370DB; /* Medium Purple */
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
 }
 
 header {
-  background-color: #4b006e;
-  color: lavender;
-  text-align: center;
-  padding: 20px;
+    position: relative;
+    min-height: 150px;
 }
 
-/* Navigation Styles */
-nav ul {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  background-color: #b36bcc;
-  flex-wrap: wrap;
+#logo {
+    border: 2px solid gold;
+    position: absolute;
+    left: 50px;
 }
 
-nav li {
-  border-right: 1px solid #fff;
-  flex: 1 1 auto;
-  text-align: center;
+#sub-header {
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
-nav li:last-child {
-  border-right: none;
+/* Typography */
+h1, h2 {
+    text-align: center;
 }
 
-nav a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+/* Media Queries */
+/* Portrait Tablet */
+@media screen and (min-width: 600px) {
+    
 }
 
-nav a:hover {
-  background-color: #6f2d91;
+/* Landscape Tablet */
+@media screen and (min-width: 768px) {
+    header, footer, .main-area {
+        width: 85%;
+        margin: 10px auto;
+    }
+
+    .columns {
+        display: flex;
+    }
+
+    .pic-area {
+        margin: 0 10px 10px;
+    }
+
+    #gallery {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #gallery section {
+        max-width: 20%;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
 }
 
-/* Layout Flexbox */
-.main-content {
-  display: flex;
-  padding: 20px;
-  gap: 20px;
-  flex-wrap: wrap;
+/* Laptop / Desktop */
+@media screen and (min-width: 992px) {
+    header, footer, .main-area {
+        width: 70%;
+    }
 }
 
-/* Aside Styles */
-aside {
-  flex: 1 1 200px;
-  background-color: #e6ccff;
-  padding: 20px;
-  border-radius: 10px;
+/* Extra Large Devices */
+@media screen and (min-width: 1600px) {
+    
 }
 
-aside h2 {
-  margin-top: 0;
-}
-
-aside ul {
-  list-style: none;
-  padding: 0;
-}
-
-aside a {
-  color: #4b006e;
-  text-decoration: none;
-}
-
-/* Articles Section */
-.columns {
-  flex: 3 1 600px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-article {
-  background-color: #f3e5ff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(75, 0, 110, 0.1);
-  flex: 1 1 calc(33% - 20px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-width: 250px;
-}
-
-article img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-  background-color: #b36bcc;
-  text-align: center;
-  padding: 15px;
-  color: white;
-}
-
-/* Responsive Layout */
-@media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  .main-content {
-    flex-direction: column;
-  }
-
-  .columns {
-    flex-direction: column;
-  }
-
-  article {
-    flex: 1 1 100%;
-  }
-
-  aside {
-    order: -1;
-  }
-}
 
