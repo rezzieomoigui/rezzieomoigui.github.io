@@ -32,6 +32,6 @@ const writeParagraph = () => {
     console.log("Hello");
 };
 
-document.getElementById("txt-name").onkeyup = (evennt) => {
+document.getElementById("txt-name").onkeyup = (event) => {
     console.log(event.target.value);
 };
