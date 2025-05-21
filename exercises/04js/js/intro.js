@@ -22,3 +22,8 @@ document.getElementById("btn-start").onclick = (event) => {
     document.getElementById("startp").innerHTML = "Started";
     event.target.innerHTML = "Starting";
 };
+
+document.getElementById("btn-end").onclick = (event) => {
+    document.getElementById("endp").innerHTML = "Ended";
+    event.target.innerHTML = "Ending";
+}
