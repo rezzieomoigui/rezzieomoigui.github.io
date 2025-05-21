@@ -1,66 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Styled Website</title>
-  <style>
-    /* Use a prettier, modern font */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background: linear-gradient(to right, #fdfcfb, #e2d1c3);
-      color: #333;
-    }
-
-    /* Center content in a formatted box */
-    #main-content {
-      background-color: white;
-      width: 80%;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Styled header */
-    h1 {
-      text-align: center;
-      color: #5d3a00;
-    }
-
-    /* Assignment links styling */
-    #assignments a {
-      text-decoration: none;         /* Removes underline */
-      color: #7a4e24;                /* Stylish warm brown */
-      display: block;
-      margin: 10px 0;
-      transition: all 0.3s ease;
-    }
-
-    #assignments a:hover {
-      color: #bf6b30;
-      transform: translateX(5px);
-    }
-
-    /* Use a consistent color theme */
-    #assignments {
-      background-color: #fff8f0;
-      padding: 15px;
-      border-left: 4px solid #d9a066;
-      border-radius: 10px;
-    }
-  </style>
-</head>
-<body>
-  <div id="main-content">
-    <h1>Welcome to My Assignments Page</h1>
-    <div id="assignments">
-      <a href="assignment1.html" id="assignment1">Assignment 1</a>
-      <a href="assignment2.html" id="assignment2">Assignment 2</a>
-      <a href="assignment3.html" id="assignment3">Assignment 3</a>
-    </div>
-  </div>
-</body>
+<html>
+    <head>
+        <title>FlexBox Example</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <img id="logo" src="https://picsum.photos/150/150">
+                <h1>Let's Make Columns</h1>
+                <p id="sub-header">Hello</p>
+            </header>
+            <div class="main-area columns">
+                <aside id="side-navigation" class="one">
+                    <h2>Interesting Articles</h2>
+                    <ul>
+                        <li>Article 1</li>
+                        <li>Article 2</li>
+                        <li>Article 3</li>
+                        <li>Article 4</li>
+                    </ul>
+                </aside>
+                <main id="main-content" class="four">
+                    <h2>My Main Heading</h2>
+                    <div class="columns">
+                        <section class="pic-area one">
+                            <h2>Section Title</h2>
+                            <img src="https://picsum.photos/600/300">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus tincidunt augue, ut consectetur tellus tincidunt ut. Morbi lobortis turpis massa, id scelerisque nisi auctor sed.</p>
+                        </section>
+                        <section class="pic-area one">
+                            <h2>Section Title</h2>
+                            <img src="https://picsum.photos/300/300">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus tincidunt augue, ut consectetur tellus tincidunt ut. Morbi lobortis turpis massa, id scelerisque nisi auctor sed.</p>
+                        </section>
+                    </div>
+    
+                </main>
+            </div>
+            <div class="main-area columns">
+                <div class="four">
+                    Gallery
+                    <div id="gallery" class="columns">
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                        <section>
+                            <img src="https://picsum.photos/250/250">
+                            <h3>Title</h3>
+                        </section>
+                    </div>
+                </div>
+                <aside class="one">
+                    Aside
+                    <ul>
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                    </ul>
+                </aside>
+            </div>
+            <footer id="footer-main">
+                <div id="footer-banner">
+                    <h3>Footer</h3>
+                    <p>Info</p>
+                </div>
+                <div id="footer-info" class="columns">
+                    <ul class="one">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                    <ul class="one">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                    <ul class="one">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+                <div id="footer-info2" class="columns">
+                    <section class="one">
+                        <p>Hello Everone</p>
+                    </section>
+                    <section class="one">
+                        <p>Hello Everone</p>
+                    </section>
+                </div>
+                <div id="footer-images" class="columns">
+                    <section><img src="https://picsum.photos/250/250"></section>
+                    <section><img src="https://picsum.photos/250/250"></section>
+                    <section><img src="https://picsum.photos/250/250"></section>
+                    <section><img src="https://picsum.photos/250/250"></section>
+                    <section><img src="https://picsum.photos/250/250"></section>
+                    <section><img src="https://picsum.photos/250/250"></section>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
