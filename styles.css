@@ -17,7 +17,7 @@ body {
   box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
 }
 
-/* Header styles */
+/* Header and footer */
 header, footer {
   text-align: center;
   background-color: #ffb6c1;
@@ -52,7 +52,7 @@ header h1, footer p {
   line-height: 1.6;
 }
 
-/* Assignments container */
+/* Assignments section */
 .assignments {
   margin-top: 40px;
   padding: 20px;
@@ -67,27 +67,32 @@ header h1, footer p {
   margin-bottom: 30px;
 }
 
-/* Assignment list styles */
+/* Assignment list styles - side-by-side layout */
 .assignment-list {
   list-style-type: none;
   padding: 0;
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-/* Each assignment */
+/* Each assignment box */
 .assignment-list li {
   background-color: #fffafc;
   padding: 20px;
   border-radius: 15px;
   border: 2px solid #ffc0cb;
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
   box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+  width: 280px;
+  flex: 0 1 auto;
 }
 
+/* Assignment link button */
 .assignment-list li a {
   text-decoration: none;
   background-color: #ffc0cb;
@@ -96,24 +101,23 @@ header h1, footer p {
   border-radius: 25px;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  flex-shrink: 0;
 }
 
 .assignment-list li a:hover {
   background-color: #ff69b4;
 }
 
-/* Image + description block */
+/* Image and text block */
 .assignment-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 100%;
+  align-items: center;
 }
 
 .assignment-content img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border: 2px solid #ffc0cb;
   border-radius: 10px;
@@ -123,28 +127,22 @@ header h1, footer p {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #5a003d;
+  text-align: center;
 }
 
 /* Responsive layout for mobile */
 @media screen and (max-width: 768px) {
-  .assignment-list li {
+  .assignment-list {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+  }
+
+  .assignment-list li {
+    width: 100%;
   }
 
   .assignment-content img {
     width: 100%;
     height: auto;
   }
-
-  .assignment-content {
-    align-items: center;
-  }
-
-  .assignment-list {
-    gap: 30px;
-  }
 }
-
-
