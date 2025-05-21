@@ -20,7 +20,7 @@ document.getElementById("btn-write").onclick = (event) => {
 
 document.getElementById("btn-start").onclick = (event) => {
     document.getElementById("startp").innerHTML = "Started";
-    event.target.innerHTML = "Starting";
+    event.target.innerHTML = "startstopp".innerHTML = "Started";
 };
 
 document.getElementById("btn-end").onclick = (event) => {
