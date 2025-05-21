@@ -30,6 +30,8 @@ document.getElementById("btn-end").onclick = (event) => {
 
 const writeParagraph = () => {
     console.log("Hello");
-}
+};
 
-document.getElementById("txt-name").onkeyup = writeParagraph;
+document.getElementById("txt-name").onkeyup = (evennt) => {
+    console.log(event.target.value);
+};
