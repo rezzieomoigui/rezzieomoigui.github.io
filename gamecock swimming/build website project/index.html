@@ -3,110 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>USC Swimming and Diving</title>
+  <title>Swimming & Diving | University of South Carolina Athletics</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-content">
-      <div class="logo-left">
-        <img src="logo2.0.png" alt="Gamecock Left Logo" />
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">Schedule</a></li>
-          <li><a href="#">Tickets</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">More</a></li>
-        </ul>
-      </nav>
-      <div class="logo-right">
-        <img src="logo2.0.png" alt="Gamecock Right Logo" />
-      </div>
+    <div class="left-logo">
+      <img src="https://gamecocksonline.com/images/logos/gamecock-logo.png" alt="Gamecock logo left" />
+    </div>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Tickets</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">More</a></li>
+      </ul>
+    </nav>
+
+    <div class="right-logo">
+      <img src="https://gamecocksonline.com/images/logos/gamecock-logo.png" alt="Gamecock logo right" />
     </div>
   </header>
 
-  <!-- Sub Navigation -->
-  <nav class="sub-nav">
-    <ul class="container">
-      <li><a href="#" class="active">Swimming and Diving</a></li>
-      <li><a href="#">Schedule</a></li>
-      <li><a href="#">Roster</a></li>
-      <li><a href="#">Results by Season</a></li>
-      <li><a href="#">More Links</a></li>
-    </ul>
-  </nav>
+  <div class="page-container">
+    <section class="content-box">
+      This is the box underneath the header. You can put news, images, or anything here!
+    </section>
+  </div>
 
-  <!-- Schedule Section -->
-  <section class="schedule-section container">
-    <h2>Schedule</h2>
+  <main>
+    <section class="hero" role="img" aria-label="Swimming & Diving banner image">
+      Swimming & Diving
+    </section>
 
-    <div class="event-list">
-      <!-- Repeat 8 times for 8 events -->
-      <div class="event-box">
-        <img src="swim-event1.jpg" alt="Event Image" />
-        <div class="event-label">Swimming and Diving</div>
-      </div>
-      <div class="event-box">
-        <img src="swim-event2.jpg" alt="Event Image" />
-        <div class="event-label">Swimming and Diving</div>
-      </div>
-      <div class="event-box">
-        <img src="swim-event3.jpg" alt="Event Image" />
-        <div class="event-label">Swimming and Diving</div>
-      </div>
-      <div class="event-box">
-        <img src="swim-event4.jpg" alt="Event Image" />
-        <div class="event-label">Swimming and Diving</div>
-      </div>
-      <div class="event-box">
-        <img src="swim-event5.jpg" alt="Event Image" />
-        <div class="event-label">Swimming and Diving</div>
-      </div>
-      <div class="event-box">
-        <img src="swim-event6.jpg" alt="Event Image" />
-        <div class="event-label">Swimming and Diving</div>
-      </div>
-      <div class="event-box">
-        <img src="swim-event7.jpg" alt="Event Image" />
-        <div class="event-label">Swimming and Diving</div>
-      </div>
-      <div class="event-box">
-        <img src="swim-event8.jpg" alt="Event Image" />
-        <div class="event-label">Swimming and Diving</div>
-      </div>
-    </div>
-
-    <div class="view-all-wrapper">
-      <a href="#" class="view-all-btn">View All</a>
-    </div>
-  </section>
-
-  <!-- Videos Section -->
-  <section class="videos-section container">
-    <h2>Videos</h2>
-    <div class="videos-grid">
-      <div class="video-box">Video 1</div>
-      <div class="video-box">Video 2</div>
-      <div class="video-box">Video 3</div>
-    </div>
-  </section>
-
-  <!-- More Headlines Section -->
-  <section class="headlines-section container">
-    <h2>More Headlines</h2>
-    <ul>
-      <li><a href="#">Gamecock Swimmer Qualifies for Nationals</a></li>
-      <li><a href="#">Team Sets New Records at Invitational</a></li>
-      <li><a href="#">Swimming and Diving Season Preview</a></li>
-      <li><a href="#">Coach Interview: Preparing for Championships</a></li>
-      <li><a href="#">Swimmers Honored at Annual Banquet</a></li>
-    </ul>
-  </section>
+    <section class="news-card" aria-labelledby="news-title-1">
+      <p class="news-meta">Swimming and Diving · April 3, 2025</p>
+      <h1 id="news-title-1" class="news-title">Eight Gamecocks Named to CSC Academic All-District Swimming & Diving Team</h1>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 University of South Carolina Athletics</p>
+    &copy; 2025 University of South Carolina Athletics
   </footer>
 </body>
 </html>
