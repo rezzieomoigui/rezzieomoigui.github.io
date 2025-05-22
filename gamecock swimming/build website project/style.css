@@ -61,7 +61,7 @@ body {
 
 .event-block {
   background-color: white;
-  width: 100%;
+  width: 85%;
   max-width: 1000px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 4px;
@@ -88,6 +88,7 @@ body {
   font-weight: bold;
   text-align: left;
   font-size: 1rem;
+  margin-top: -4px;
 }
 
 footer {
@@ -96,6 +97,7 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
 
 
 
