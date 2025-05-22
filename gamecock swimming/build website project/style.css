@@ -1,101 +1,76 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
+/* View All Button */
+.view-all-container {
+  text-align: center;
+  margin: 40px 0 20px 0;
 }
-
-.site-header {
+.view-all-button {
   background-color: #720000;
   color: white;
-  display: flex;
-  align-items: center;
-  padding: 25px 50px;
-  justify-content: space-between;
-}
-
-.left-logo img,
-.right-logo img {
-  height: 50px;
-}
-
-.main-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.main-nav li a {
-  color: white;
+  padding: 12px 28px;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 20px;
-  transition: background 0.3s;
-}
-
-.main-nav li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.view-all-button:hover {
+  background-color: #a50000;
 }
 
-.hero {
-  background: url('swim.webp') no-repeat center center/cover;
-  height: 800px;
+/* Video Section */
+.video-section {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+.video-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.video-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.video-box {
+  background-color: #333;
+  width: 300px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 3em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  font-weight: bold;
 }
 
-.schedule-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  padding: 40px 0;
+/* More Headlines */
+.headlines-section {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
 }
-
-.event-block {
-  background-color: white;
-  width: 85%;
-  max-width: 1000px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 4px;
-  overflow: hidden;
+.headlines-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
-
-.event-block img {
-  width: 100%;
-  height: auto;
-  display: block;
+.headline-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
-
-.event-info {
-  padding: 16px;
-  font-size: 1.1rem;
-  color: #333;
+.headline-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.headline-list li a {
+  text-decoration: none;
+  color: #720000;
   font-weight: 500;
 }
-
-.event-label {
-  background-color: #e3e2e2;
-  color: rgb(0, 0, 0);
-  padding: 12px 16px;
-  font-weight: bold;
-  text-align: left;
-  font-size: 1rem;
-  margin-top: -4px;
-}
-
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
+.headline-list li a:hover {
+  text-decoration: underline;
 }
 
 
