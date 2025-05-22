@@ -40,6 +40,31 @@ body {
   border-radius: 4px;
 }
 
+.second-nav {
+  background-color: #000000;
+  padding: 12px 50px;
+}
+
+.second-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.second-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.second-nav a:hover {
+  text-decoration: underline;
+}
+
 .hero {
   background: url('swim.webp') no-repeat center center/cover;
   height: 800px;
@@ -97,6 +122,7 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
 
 
 
