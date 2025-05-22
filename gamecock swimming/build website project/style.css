@@ -42,7 +42,7 @@ body {
 
 .second-nav {
   background-color: #000000;
-  padding: 28px 50px;
+  padding: 12px 50px;
 }
 
 .second-nav ul {
@@ -116,12 +116,59 @@ body {
   margin-top: -4px;
 }
 
+/* New Section: Videos */
+.videos-section {
+  background-color: #000;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.video-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.video-card img {
+  width: 300px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* New Section: More Headlines */
+.headlines-section {
+  background-color: white;
+  color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.headline-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.headline-card img {
+  width: 250px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 footer {
   background-color: #222;
   color: white;
   text-align: center;
   padding: 1rem 0;
 }
+
 
 
 
