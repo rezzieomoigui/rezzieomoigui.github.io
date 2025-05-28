@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Your Taste - MySound</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>MySound</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover Your Taste</a></li>
+        <li><a href="genres.html">Genres</a></li>
+        <li><a href="artists.html">Artist Spotlight</a></li>
+        <li><a href="playlist.html">My Playlist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="quiz">
+    <h2>Discover Your Taste</h2>
+    <p>Answer a few fun questions and we'll match you to the perfect playlist!</p>
+    <form id="quiz-form">
+      <label>What's your go-to vibe?
+        <select name="vibe">
+          <option value="chill">Chill</option>
+          <option value="happy">Happy</option>
+          <option value="sad">Sad</option>
+          <option value="romantic">Romantic</option>
+        </select>
+      </label>
+      <br /><br />
+      <label>Favorite time to listen?
+        <select name="time">
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+          <option value="late">Late Night</option>
+        </select>
+      </label>
+      <br /><br />
+      <button type="submit">Find My Vibe</button>
+    </form>
+    <div id="result" class="result-box"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MySound. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("quiz-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const vibe = e.target.vibe.value;
+      const time = e.target.time.value;
+      const result = document.getElementById("result");
+      result.innerHTML = `🎧 Based on your vibe of <strong>${vibe}</strong> and favorite time <strong>${time}</strong>, we recommend a custom playlist just for you!`;
+    });
+  </script>
+</body>
+</html>

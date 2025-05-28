@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Playlist - MySound</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>MySound</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover Your Taste</a></li>
+        <li><a href="genres.html">Genres</a></li>
+        <li><a href="artists.html">Artist Spotlight</a></li>
+        <li><a href="playlist.html">My Playlist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="playlist">
+    <h2>My Playlist</h2>
+    <form id="song-form">
+      <input type="text" id="song-title" placeholder="Song Title" required />
+      <input type="text" id="song-artist" placeholder="Artist" required />
+      <button type="submit">Add Song</button>
+    </form>
+    <ul id="playlist-list"></ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MySound. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('song-form');
+    const list = document.getElementById('playlist-list');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const title = document.getElementById('song-title').value;
+      const artist = document.getElementById('song-artist').value;
+      const li = document.createElement('li');
+      li.textContent = `${title} by ${artist}`;
+      list.appendChild(li);
+      form.reset();
+    });
+  </script>
+</body>
+</html>

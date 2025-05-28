@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genres - MySound</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>MySound</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover Your Taste</a></li>
+        <li><a href="genres.html">Genres</a></li>
+        <li><a href="artists.html">Artist Spotlight</a></li>
+        <li><a href="playlist.html">My Playlist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="genres">
+    <h2>Explore Genres</h2>
+    <div class="genre-grid">
+      <div class="genre-card" onclick="showInfo('Pop')">
+        <img src="img/pop.jpg" alt="Pop">
+        <h3>Pop</h3>
+      </div>
+      <div class="genre-card" onclick="showInfo('Indie')">
+        <img src="img/indie.jpg" alt="Indie">
+        <h3>Indie</h3>
+      </div>
+      <div class="genre-card" onclick="showInfo('Lofi')">
+        <img src="img/lofi.jpg" alt="Lofi">
+        <h3>Lofi</h3>
+      </div>
+      <div class="genre-card" onclick="showInfo('K-Pop')">
+        <img src="img/kpop.jpg" alt="K-Pop">
+        <h3>K-Pop</h3>
+      </div>
+    </div>
+    <div id="genre-info" class="lightbox"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MySound. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showInfo(genre) {
+      const info = {
+        'Pop': 'Bright, catchy, and made for mainstream. Artists like Ariana Grande and Dua Lipa shine here.',
+        'Indie': 'Authentic and raw—Indie gives you creativity in its purest form.',
+        'Lofi': 'Relax and focus with mellow beats and chill instrumentals.',
+        'K-Pop': 'High energy, strong visuals, and addictive hooks. Think BTS and BLACKPINK!'
+      };
+      const box = document.getElementById("genre-info");
+      box.innerHTML = `<div class='info-box'><h3>${genre}</h3><p>${info[genre]}</p><button onclick='closeInfo()'>Close</button></div>`;
+      box.style.display = 'block';
+    }
+
+    function closeInfo() {
+      document.getElementById("genre-info").style.display = 'none';
+    }
+  </script>
+</body>
+</html>
