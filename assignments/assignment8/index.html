@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assignment 8 - If Statements</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Assignment 8</h1>
+    <h2>If Statements</h2>
+    <div class="toggle-arrow" onclick="toggleMenu()">▼</div>
+    <div class="menu-items" id="menuItems">
+      <a onclick="showSection('speeding')">Exercise 1</a>
+      <a onclick="showSection('art')">Exercise 2</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Exercise 1 -->
+    <div id="speeding" class="section">
+      <h3>Let's Speed</h3>
+      <input type="range" id="speedSlider" min="1" max="10" value="5" />
+      <br /><br />
+      <button onclick="startBike()">Go</button>
+      <button onclick="stopBike()">Stop</button>
+      <div class="bike-container">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2972/2972131.png"
+          alt="Bike"
+          class="bike"
+          id="bike"
+        />
+      </div>
+    </div>
+
+    <!-- Exercise 2 -->
+    <div id="art" class="section">
+      <h3>CSS Art</h3>
+      <div class="art-buttons">
+        <button onclick="showArt('moon')">Moon</button>
+        <button onclick="showArt('star')">Star</button>
+        <button onclick="showArt('cloud')">Cloud</button>
+      </div>
+      <div class="art-box" id="artBox"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
