@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.site-header {
+  background-color: #720000;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 25px 50px;
+  justify-content: space-between;
+}
+
+.left-logo img,
+.right-logo img {
+  height: 50px;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.main-nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background 0.3s;
+}
+
+.main-nav li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.second-nav {
+  background-color: #000000;
+  padding: 35px 50px;
+}
+
+.second-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.second-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.second-nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('swim.webp') no-repeat center center/cover;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.schedule-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 0;
+}
+
+.event-block {
+  background-color: white;
+  width: 85%;
+  max-width: 1000px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.event-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.event-info {
+  padding: 16px;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.event-label {
+  background-color: #bab8b8;
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 1rem;
+  margin-top: -4px;
+}
+
+/* New Section: Videos */
+.videos-section {
+  background-color: #000;
+  color: white;
+  padding: 700px 0;
+  text-align: center;
+}
+
+.video-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.video-card img {
+  width: 300px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* New Section: More Headlines */
+.headlines-section {
+  background-color: white;
+  color: #000;
+  padding: 200px 0;
+  text-align: center;
+}
+
+.headline-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.headline-card img {
+  width: 250px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
