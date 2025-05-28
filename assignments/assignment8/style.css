@@ -7,17 +7,17 @@ body {
 }
 
 header {
-  background-color: #edf0e5;
+  background-color: #000dff;
   padding: 1rem;
 }
 
 h1 {
   margin: 0;
-  color: #507d87;
+  color: #6f0991;
 }
 
 h2 {
-  color: #d08080;
+  color: #ffffff;
 }
 
 nav {
@@ -111,13 +111,13 @@ main {
 .moon {
   width: 80px;
   height: 80px;
-  background: yellow;
+  background: rgb(226, 226, 109);
   border-radius: 50%;
-  box-shadow: -20px 0 0 0 skyblue;
+  box-shadow: -20px 0 0 0 rgb(233, 55, 55);
 }
 
 .star {
-  color: gold;
+  color: rgb(244, 229, 147);
   font-size: 50px;
 }
 
