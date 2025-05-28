@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #000dff;
+  background-color: #050848;
   padding: 1rem;
 }
 
@@ -93,7 +93,7 @@ main {
 }
 
 .art-box {
-  background: skyblue;
+  background: rgb(206, 234, 246);
   height: 250px;
   display: flex;
   justify-content: center;
@@ -113,7 +113,7 @@ main {
   height: 80px;
   background: rgb(226, 226, 109);
   border-radius: 50%;
-  box-shadow: -20px 0 0 0 rgb(233, 55, 55);
+  box-shadow: -20px 0 0 0 rgb(7, 37, 78);
 }
 
 .star {
