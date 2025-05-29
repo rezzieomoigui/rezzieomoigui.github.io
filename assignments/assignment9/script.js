@@ -21,7 +21,7 @@ document.getElementById("exerciseBtn").addEventListener("click", function () {
   index = 0;
 
   interval = setInterval(() => {
-    document.getElementById("stickFigure").src = images[index];
+    document.getElementById("3(1).png").src = images[index];
     index++;
 
     if (index >= images.length) {
