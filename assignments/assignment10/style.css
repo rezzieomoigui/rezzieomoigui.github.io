@@ -21,7 +21,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(223, 13, 167, 0.911);
 }
 
 .image-container img {
@@ -51,7 +51,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background: rgb(172, 237, 248);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
@@ -71,7 +71,7 @@ body {
   right: 15px;
   cursor: pointer;
   font-size: 20px;
-  color: #a00;
+  color: rgb(159, 223, 81);
 }
 
 .hidden {
