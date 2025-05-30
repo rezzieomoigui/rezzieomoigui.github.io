@@ -1,10 +1,10 @@
 const images = [
-  { title: "Party Time", file: "img1.png" },
-  { title: "Happy", file: "img2.png" },
-  { title: "It's Raining", file: "img3.png" },
-  { title: "Cool Guy", file: "img4.png" },
-  { title: "Coffee Break", file: "img5.png" },
-  { title: "Mail Time", file: "img6.png" }
+  { title: "Birthday", file: "birthday.jpg" },
+  { title: "Clown", file: "clown.jpg" },
+  { title: "Rain", file: "rain.jpg" },
+  { title: "Read", file: "read.jpg" },
+  { title: "Shovel", file: "shovel.jpg" },
+  { title: "Work", file: "work.jpg" }
 ];
 
 const gallery = document.getElementById("gallery");
