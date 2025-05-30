@@ -21,7 +21,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(223, 13, 167, 0.911);
+  box-shadow: 0 4px 8px rgba(245, 179, 227, 0.911);
 }
 
 .image-container img {
