@@ -33,7 +33,7 @@ body {
 .overlay {
   position: absolute;
   bottom: 0;
-  background: rgba(250, 158, 241, 0.7);
+  background: rgb(172, 237, 248);
   color: white;
   width: 100%;
   text-align: center;
