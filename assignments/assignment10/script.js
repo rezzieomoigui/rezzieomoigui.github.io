@@ -1,5 +1,5 @@
 const images = [
-  { title: "Birthday", file: "birthday.jpg" },
+  { title: "Birthday", file: "images/birthday.jpg" },
   { title: "Clown", file: "clown.jpg" },
   { title: "Rain", file: "rain.jpg" },
   { title: "Read", file: "read.jpg" },
