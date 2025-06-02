@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 11 - Hot Dogs</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="w3-container">
+    <h2 class="w3-center">Assignment 11</h2>
+    <h4 class="w3-center">Classes</h4>
+    
+    <div id="hotdog-container" class="w3-row-padding w3-center"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="hotdog-modal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-padding">
+      <span onclick="document.getElementById('hotdog-modal').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+      <div id="modal-content" class="w3-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
