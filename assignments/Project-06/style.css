@@ -1,62 +1,72 @@
-/* Reset some default styles */
+/* Y2K Style Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Fonts & body */
+/* Fonts & Body */
 body {
   background-color: #000; /* Black background */
-  color: #c71585; /* Main font color: Medium Violet Red */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ff66cc; /* Neon pink/purple */
+  font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   padding: 1rem;
+  background-image: radial-gradient(circle at top left, #330033, #000 70%);
 }
 
 /* Headings */
 h1, h2, h3 {
-  color: #9932cc; /* Purple */
+  color: #da70d6; /* Orchid purple */
   margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff66cc;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 1rem;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .tagline {
   text-align: center;
-  color: #ff1493; /* Deep Pink */
+  color: #ff66cc;
   margin-bottom: 2rem;
+  font-style: italic;
+  text-shadow: 0 0 5px #ff69b4;
 }
 
 /* Navigation */
 nav {
-  background-color: #111;
+  background: linear-gradient(45deg, #330066, #ff0080);
   padding: 0.75rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ff00ff55;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 nav ul li a {
-  color: #ff4500; /* Orange Red */
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 0 0 3px #fff;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #ff69b4; /* Hot Pink */
+  color: #ff1493;
 }
 
 /* Toggle Menu */
@@ -87,39 +97,43 @@ nav ul li a:hover {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
   padding: 2rem 0;
 }
 
 /* Song Cards */
 .card {
-  background-color: #1a1a1a;
+  background: linear-gradient(145deg, #1a0033, #330033);
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 0 10px #9932cc55;
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 12px #ff00cc55;
+  border: 1px solid #ff66cc88;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
+  box-shadow: 0 0 18px #ff00ff88;
 }
 
 .card img {
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-bottom: 0.5rem;
+  border: 2px solid #ff1493;
 }
 
 /* Contact Form */
 .contact {
   margin-top: 3rem;
-  padding: 1rem;
+  padding: 2rem;
   background-color: #111;
-  border-radius: 8px;
+  border-radius: 12px;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 0 20px #ff00ff33;
 }
 
 .contact input,
@@ -127,30 +141,35 @@ nav ul li a:hover {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #222;
+  border: 2px solid #ff00cc55;
+  border-radius: 8px;
+  background-color: #1a1a1a;
   color: #fff;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .contact button {
-  background-color: #ff1493;
+  background: linear-gradient(90deg, #ff1493, #ff00cc);
   color: #fff;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 8px;
   font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 0 10px #ff00ff88;
+  transition: transform 0.2s ease-in-out;
 }
 
 .contact button:hover {
-  background-color: #c71585;
+  transform: scale(1.05);
 }
 
 /* Form status message */
 #form-message {
   margin-top: 0.5rem;
   font-weight: bold;
+  color: #00ffcc;
 }
 
 /* IFrame Section */
@@ -163,11 +182,14 @@ nav ul li a:hover {
   max-width: 800px;
   margin: 0 auto;
   aspect-ratio: 16 / 9;
+  box-shadow: 0 0 18px #9932cc88;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .iframe-wrapper iframe {
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 8px;
 }
+
