@@ -1,0 +1,121 @@
+<!--
+Project Part 6 Submission - MySound Music Discovery App
+Main Page: /projects/part6/index.html
+JSON Data: Loaded from songs.json (8 music tracks displayed dynamically)
+JavaScript Features: Toggle menu on small screens, contact form with async, JSON parsing
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MySound – Music Discovery Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🔷 Header and Navigation -->
+  <header>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="menu" id="nav-menu">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="#">Part 6</a></li>
+      </ul>
+    </nav>
+    <h1>MySound</h1>
+    <p class="tagline">Discover your next favorite track</p>
+  </header>
+
+  <!-- 🔷 Main Section -->
+  <main>
+    <!-- 🔹 Music Section Loaded from JSON -->
+    <section id="item-container" class="grid">
+      <!-- JavaScript will dynamically populate music cards here -->
+    </section>
+
+    <!-- 🔹 Contact Me Form -->
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="form-message"></p>
+      </form>
+    </section>
+
+    <!-- 🔹 Embedded YouTube Video -->
+    <section class="iframe">
+      <h2>Featured Music Video</h2>
+      <div class="iframe-wrapper">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- 🔷 JavaScript Section -->
+  <script>
+    // 🔸 Toggle menu for small screens
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('nav-menu').classList.toggle('active');
+    });
+
+    // 🔸 Load songs.json data dynamically
+    const url = "https://yourusername.github.io/projects/part6/songs.json";
+    const container = document.getElementById("item-container");
+
+    fetch(url)
+      .then((res) => res.json())
+      .then((songs) => {
+        songs.forEach(song => {
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `
+            <img src="${song.img_name}" alt="${song.title}">
+            <h3>${song.title}</h3>
+            <p><strong>Artist:</strong> ${song.artist}</p>
+            <p><strong>Album:</strong> ${song.album}</p>
+            <p><strong>Genre:</strong> ${song.genre}</p>
+          `;
+          container.appendChild(card);
+        });
+      })
+      .catch(err => {
+        container.innerHTML = "<p>Error loading music data.</p>";
+        console.error(err);
+      });
+
+    // 🔸 Async Contact Form Submission
+    document.getElementById("contact-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formMessage = document.getElementById("form-message");
+      const formData = new FormData(e.target);
+
+      try {
+        await fetch("https://formsubmit.co/ajax/YOUR@EMAIL.com", {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: formData.get("name"),
+            email: formData.get("email"),
+            message: formData.get("message")
+          })
+        });
+
+        formMessage.textContent = "Message sent successfully!";
+        formMessage.style.color = "green";
+        e.target.reset();
+      } catch (err) {
+        formMessage.textContent = "Error sending message.";
+        formMessage.style.color = "red";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts & body */
+body {
+  background-color: #000; /* Black background */
+  color: #c71585; /* Main font color: Medium Violet Red */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #9932cc; /* Purple */
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.tagline {
+  text-align: center;
+  color: #ff1493; /* Deep Pink */
+  margin-bottom: 2rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #111;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: #ff4500; /* Orange Red */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff69b4; /* Hot Pink */
+}
+
+/* Toggle Menu */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Grid layout for song cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+/* Song Cards */
+.card {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px #9932cc55;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+.contact {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #111;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+
+.contact button {
+  background-color: #ff1493;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact button:hover {
+  background-color: #c71585;
+}
+
+/* Form status message */
+#form-message {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* IFrame Section */
+.iframe {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.iframe-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+}
+
+.iframe-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
