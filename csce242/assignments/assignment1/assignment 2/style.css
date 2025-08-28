@@ -1,0 +1,94 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+  background: url("blackcat-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f3eaff;
+}
+
+/* Content wrapper */
+#content-wrapper {
+  background: rgba(20, 10, 30, 0.9);
+  width: 80%;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.7);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #d6a4ff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #b380ff;
+  margin: 20px 0 10px;
+  border-bottom: 2px solid #d6a4ff;
+  padding-bottom: 5px;
+}
+
+/* Paragraphs */
+p {
+  margin: 12px 0;
+  line-height: 1.6;
+}
+
+/* Image gallery */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.image-gallery img {
+  width: 280px;
+  border: 3px solid #b380ff;
+  border-radius: 12px;
+  padding: 5px;
+  background-color: #2a1a3a;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 2px solid #b380ff;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #4b2a63;
+  color: #f8f4ff;
+}
+
+td {
+  background-color: #2a1a3a;
+  color: #eaddff;
+}
