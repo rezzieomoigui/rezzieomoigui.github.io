@@ -37,3 +37,14 @@ document.getElementById("txt-emotion").onkeyup = (event) => {
     document.getElementById("p-emotion").innerHTML = `You are feeling ${userInput}.`
     document.getElementById("img-emotion").classList.remove("hidden");
 };
+
+document.getElementById("btn-mood-ring").onclick = () => {
+    const color = document.getElementById("txt-color").value.trim();
+    const p = document.getElementById("p-mood-result");
+    document.getElementById("error-color").innerHTML = "";  //reset error
+    
+    if(color == ""){
+        document.getElementById("error-color").innerHTML = "* blank";
+        return;
+    }
+}
