@@ -4,21 +4,23 @@
   <meta charset="UTF-8">
   <title>Rezzie Omoigui: CSCE 242 Web Applications</title>
   <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div id="page-wrapper">
+    <!-- Header -->
     <header>
       <h1>Rezzie Omoigui: CSCE 242 Web Applications</h1>
     </header>
 
+    <!-- About Section -->
     <main>
       <section class="intro">
         <h2>About Me</h2>
         <p>
-          This course is a computer science course. In this course, I will be developing my own websites and learning how to properly code.
+          This course is a deep dive into web application development.  
+          I will learn how to design and build functional, visually appealing, and responsive websites.
         </p>
-
-        <!-- GitHub repo link -->
         <p>
           <a href="https://github.com/rezzieomoigui/rezzieomoigui.github.io.git" 
              target="_blank" id="repo-link">
@@ -27,31 +29,55 @@
         </p>
       </section>
 
+      <!-- Assignments Section -->
       <section class="assignments">
         <h2>Assignments</h2>
-        <ul class="assignment-list">
-          <li>
-            <div class="assignment-card">
-              <a href="assignments/assignment01/index.html">HTML</a>
-              <img src="html.png" alt="Assignment 1 Screenshot">
-              <p>This assignment introduced the basics of HTML. I created a simple webpage using semantic HTML5 elements such as headers, paragraphs, and links.</p>
-            </div>
-          </li>
-          <li>
-            <div class="assignment-card">
-              <a href="assignments/assignment1/assignment2/">CSS</a>
-              <img src="css.png" alt="Assignment 2 Screenshot">
-              <p>This assignment focused on styling with CSS. I used colors, margins, and font styles to make the webpage more visually appealing.</p>
-            </div>
-          </li>
-        </ul>
+        <div class="assignment-container">
+          
+          <article class="assignment-card">
+            <a href="assignments/assignment01/index.html">Assignment 1: HTML Basics</a>
+            <img src="html.png" alt="Assignment 1 Screenshot">
+            <p>
+              My first assignment focused on HTML5 structure.  
+              I practiced using semantic elements like headers, paragraphs, lists, and links to build a clean, well-structured webpage.
+            </p>
+          </article>
+
+          <article class="assignment-card">
+            <a href="assignments/assignment02/index.html">Assignment 2: CSS Styling</a>
+            <img src="css.png" alt="Assignment 2 Screenshot">
+            <p>
+              This project introduced CSS.  
+              I explored colors, borders, and fonts to enhance the look of my HTML page and give it a polished design.
+            </p>
+          </article>
+
+          <article class="assignment-card">
+            <a href="assignments/assignment03/index.html">Assignment 3: Page Layout</a>
+            <img src="layout.png" alt="Assignment 3 Screenshot">
+            <p>
+              In this assignment, I learned page layout techniques using Flexbox.  
+              I created responsive sections that adjust gracefully between desktop and mobile screens.
+            </p>
+          </article>
+
+          <article class="assignment-card">
+            <a href="assignments/assignment04/index.html">Assignment 4: Flexbox Responsive Layout</a>
+            <img src="flexbox.png" alt="Assignment 4 Screenshot">
+            <p>
+              This project used advanced Flexbox techniques with media queries.  
+              I built a responsive website that adapts between large multi-column layouts and small vertical stacking layouts.
+            </p>
+          </article>
+
+        </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Rezzie Omoigui</p>
+      <p>&copy; 2025 Rezzie Omoigui | CSCE 242</p>
     </footer>
   </div>
 </body>
 </html>
-

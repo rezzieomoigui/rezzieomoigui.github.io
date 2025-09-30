@@ -47,4 +47,8 @@ document.getElementById("btn-mood-ring").onclick = () => {
         document.getElementById("error-color").innerHTML = "* blank";
         return;
     }
+    if(color == "red") {
+        p.innerHTML = " You choose red, you are angry";
+    }
+    
 }
