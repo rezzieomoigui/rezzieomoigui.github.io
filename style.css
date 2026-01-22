@@ -66,3 +66,9 @@
 #project-link:hover {
     color: #a85763;
 }
+
+#github-link {
+    text-decoration: none;
+    color: #f2b5c4;
+    font-weight: bold;
+}
