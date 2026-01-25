@@ -4,37 +4,85 @@
     <meta charset="UTF-8">
     <title>CSCE 242: Rezzie Omoigui</title>
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body id="page-background">
 
-    <div id="content-box">
-        <h1 id="main-title">CSCE 242</h1>
-        <h2 id="sub-title">Rezzie Omoigui</h2>
+<header id="content-box">
+    <h1 id="main-title">CSCE 242</h1>
+    <h2 id="sub-title">Rezzie Omoigui</h2>
 
-        <p id="description">
-            This is a coding class where we learn to build and design websites using HTML and CSS.
-        </p>
-<p>
-    <a href="https://github.com/rezzieomoigui/rezzieomoigui.github.io" id="github-link">
-        View my CSCE 242 GitHub Repository
-    </a>
-</p>
+    <p id="description">
+        This is a coding class where we learn to build and design websites using HTML and CSS.
+    </p>
+
+    <p>
+        <a href="https://github.com/rezzieomoigui/rezzieomoigui.github.io" id="github-link">
+            View my CSCE 242 GitHub Repository
+        </a>
+    </p>
+</header>
+
+<main id="content-box">
+
+    <!-- ASSIGNMENTS -->
+    <section>
         <h3 id="section-title">Assignments</h3>
-        <ul id="assignment-list">
-            <li><a id="assignment-link" href="/csce242/assignments/01-basic-html/index.html">Basic HTML</a></li>
-            <li><a id="assignment-link" href="/csce242/assignments/02-basic-css/index.html">Basic CSS</a></li>
-        </ul>
 
-        <h4 id="section-title">Projects</h4>
-        <ul id="project-list">
-            <li><a id="project-link" href="/csce242/projects/part1/Project 1_ Topic Selection.pdf">Project 1</a></li>
-        </ul>
-    </div>
+        <div class="card-container">
+
+            <article class="card">
+                <img src="images/assignment1.png" alt="Basic HTML Screenshot">
+                <h4>Assignment 1 – Basic HTML</h4>
+                <p>
+                    This assignment focused on learning proper HTML structure,
+                    headings, links, images, and semantic tags.
+                </p>
+                <a href="/csce242/assignments/01-basic-html/index.html">View Assignment</a>
+            </article>
+
+            <article class="card">
+                <img src="images/assignment2.png" alt="Basic CSS Screenshot">
+                <h4>Assignment 2 – Basic CSS</h4>
+                <p>
+                    In this assignment, I applied CSS styling including colors,
+                    fonts, spacing, and layout techniques.
+                </p>
+                <a href="/csce242/assignments/02-basic-css/index.html">View Assignment</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+        <h3 id="section-title">Projects</h3>
+
+        <div class="card-container">
+
+            <article class="card">
+                <img src="images/project1.png" alt="Project Topic Screenshot">
+                <h4>Project 1 – Topic Selection</h4>
+                <p>
+                    This project outlines my website topic, goals, and data
+                    requirements for the semester project.
+                </p>
+                <a href="/csce242/projects/part1/Project 1_ Topic Selection.pdf">View Project</a>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer id="content-box">
+    <p style="text-align:center;">© 2026 Rezzie Omoigui</p>
+</footer>
 
 </body>
 </html>
+
