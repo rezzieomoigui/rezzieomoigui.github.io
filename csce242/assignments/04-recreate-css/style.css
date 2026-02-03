@@ -28,7 +28,7 @@
 .top-links a {
   color: var(--usc-white);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.5rem;
   letter-spacing: 0.05em;
 }
 
@@ -50,7 +50,7 @@
 
 .logo img {
   width: 100px;
-  height: 50px;
+  height: 100px;
 }
 
 
@@ -70,7 +70,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 5rem;
-  padding: 2.5rem 15rem;
+  padding: 1rem 15rem;
 }
 
 .main-nav a {
