@@ -150,6 +150,159 @@ a {
 .price {
   font-size: 13px;
 }
+/* =========================
+   ADVANCED SHOP PAGE ONLY
+========================= */
+
+.shop-page main {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* HEADER DETAILS */
+
+.shop-eyebrow {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+/* SIDEBAR LUXURY */
+
+.shop-sidebar {
+  position: sticky;
+  top: 40px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #fff7f9;
+  border: 1px solid #f1d6dc;
+}
+
+.sidebar-block:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.shop-sidebar h3 {
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.shop-sidebar label {
+  cursor: pointer;
+}
+
+.size-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+/* SHOP TOOLBAR */
+
+.shop-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.results-count {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.sort-dropdown {
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: 1px solid #e5e5e5;
+  font-size: 13px;
+  background: white;
+}
+
+/* PRODUCT GRID REFINED */
+
+.shop-products {
+  padding-right: 40px;
+}
+
+.product-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* PRODUCT CARD LUXURY */
+
+.product-card {
+  max-width: none;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  transition: 0.35s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+.product-image {
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+.product-info {
+  padding: 25px;
+}
+
+.product-info h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.product-info .price {
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: var(--gold);
+}
+
+/* BUTTON REFINEMENT */
+
+.shop-page .btn {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* RESPONSIVE SHOP ONLY */
+
+@media (max-width: 900px) {
+
+  .shop-toolbar {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .shop-products {
+    padding-right: 0;
+  }
+}
 
 /* =========================
    DEFAULT PAGE CONTAINER
@@ -325,22 +478,7 @@ form select:focus {
   margin-bottom: 10px;
 }
 
-/* RESPONSIVE */
 
-@media (max-width: 900px) {
-
-  .contact-info-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-main-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-hero-content h1 {
-    font-size: 42px;
-  }
-}
 /* =========================
    SELL PAGE
 ========================= */
@@ -516,7 +654,7 @@ form select:focus {
 /* CREATE LOOK */
 
 .create-look {
-  padding: 80px 8%;
+  padding: 100px 8%;
   background: #f4f1f2;
   text-align: center;
 }
@@ -548,8 +686,8 @@ form select:focus {
 }
 
 .look-card img {
-  width: 150%;
-  height: 950px;
+  width: 100%;
+  height: 700px;
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 15px;
@@ -565,7 +703,20 @@ form select:focus {
   font-size: 14px;
   line-height: 1.6;
 }
+/* RESPONSIVE SHOP ONLY */
 
+@media (max-width: 900px) {
+
+  .shop-toolbar {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .shop-products {
+    padding-right: 0;
+  }
+}
 /* RESPONSIVE */
 
 @media (max-width: 900px) {

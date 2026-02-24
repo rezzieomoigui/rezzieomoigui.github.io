@@ -18,81 +18,114 @@
 
   <div class="nav-bottom">
     <nav class="links">
-  <li><a href="index.html">Home</a></li>
-    <li><a href="shop.html">Shop</a></li>
-    <li><a href="sell.html">Sell</a></li>
-    <li><a href="styletips.html">Style Tips</a></li>
-    <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="sell.html">Sell</a></li>
+      <li><a href="styletips.html">Style Tips</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </nav>
   </div>
 </header>
 
-<!-- SHOP HEADER (FULL WIDTH) -->
+<!-- SHOP HEADER -->
 <section class="shop-header">
-  <h1>SHOP</h1>
-  <p>Curated vintage & trendy-inspired pieces for bold, confident style.</p>
-  <h2>Handpicked</h2>
+  <span class="shop-eyebrow">Vintage Vixen Collection</span>
+  <h1>THE SHOP</h1>
+  <p>Hand-selected vintage & trend-inspired pieces curated for bold, confident expression.</p>
 </section>
+
 <!-- SHOP BODY -->
 <main class="shop-layout">
 
   <!-- SIDEBAR -->
   <aside class="shop-sidebar">
-    <h3>Category</h3>
-    <ul>
-      <li><input type="checkbox"> Tops</li>
-      <li><input type="checkbox"> Jeans</li>
-      <li><input type="checkbox"> Graphic Tees</li>
-      <li><input type="checkbox"> Accessories</li>
-    </ul>
+    <div class="sidebar-block">
+      <h3>Category</h3>
+      <ul>
+        <li><label><input type="checkbox"> Tops</label></li>
+        <li><label><input type="checkbox"> Jeans</label></li>
+        <li><label><input type="checkbox"> Graphic Tees</label></li>
+        <li><label><input type="checkbox"> Accessories</label></li>
+      </ul>
+    </div>
 
-    <h3>Size</h3>
-    <ul>
-      <li><input type="checkbox"> XS</li>
-      <li><input type="checkbox"> S</li>
-      <li><input type="checkbox"> M</li>
-      <li><input type="checkbox"> L</li>
-    </ul>
+    <div class="sidebar-block">
+      <h3>Size</h3>
+      <ul class="size-grid">
+        <li><label><input type="checkbox"> XS</label></li>
+        <li><label><input type="checkbox"> S</label></li>
+        <li><label><input type="checkbox"> M</label></li>
+        <li><label><input type="checkbox"> L</label></li>
+      </ul>
+    </div>
 
-    <h3>Price</h3>
-    <ul>
-      <li><input type="checkbox"> Under $25</li>
-      <li><input type="checkbox"> $25–$50</li>
-      <li><input type="checkbox"> Over $50</li>
-    </ul>
+    <div class="sidebar-block">
+      <h3>Price</h3>
+      <ul>
+        <li><label><input type="checkbox"> Under $25</label></li>
+        <li><label><input type="checkbox"> $25–$50</label></li>
+        <li><label><input type="checkbox"> Over $50</label></li>
+      </ul>
+    </div>
   </aside>
 
   <!-- PRODUCTS -->
   <section class="shop-products">
 
+    <div class="shop-toolbar">
+      <span class="results-count">Showing 4 curated pieces</span>
+      <select class="sort-dropdown">
+        <option>Sort by: Featured</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Newest</option>
+      </select>
+    </div>
+
     <div class="product-grid">
 
       <div class="product-card">
-        <img src="images/zipperprice.png" alt="Zipper Top">
-        <h4>Zipper Top</h4>
-        <p class="price">$35</p>
-         <a href="#" class="btn">Add to Cart</a>
+        <div class="product-image">
+          <img src="images/zipperprice.png" alt="Zipper Top">
+        </div>
+        <div class="product-info">
+          <h4>Zipper Top</h4>
+          <p class="price">$35</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
       </div>
 
       <div class="product-card">
-        <img src="images/graphicprice.png" alt="Graphic Tee">
-        <h4>Graphic Tee</h4>
-        <p class="price">$33</p>
-        <a href="#" class="btn">Add to Cart</a>
+        <div class="product-image">
+          <img src="images/graphicprice.png" alt="Graphic Tee">
+        </div>
+        <div class="product-info">
+          <h4>Graphic Tee</h4>
+          <p class="price">$33</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
       </div>
 
       <div class="product-card">
-        <img src="images/jeans1.jpg" alt="Low Rise Denim">
-        <h4>Low Rise Denim</h4>
-        <p class="price">$42</p>
-        <a href="#" class="btn">Add to Cart</a>
+        <div class="product-image">
+          <img src="images/jeans1.jpg" alt="Low Rise Denim">
+        </div>
+        <div class="product-info">
+          <h4>Low Rise Denim</h4>
+          <p class="price">$42</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
       </div>
 
       <div class="product-card">
-        <img src="images/accessory1.jpg" alt="Accessories">
-        <h4>Accessories</h4>
-        <p class="price">$18</p>
-        <a href="#" class="btn">Add to Cart</a>
+        <div class="product-image">
+          <img src="images/accessory1.jpg" alt="Accessories">
+        </div>
+        <div class="product-info">
+          <h4>Accessories</h4>
+          <p class="price">$18</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
       </div>
 
     </div>
@@ -102,3 +135,4 @@
 
 </body>
 </html>
+
