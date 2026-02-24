@@ -5,67 +5,74 @@
   <title>Sell With Us | Vintage Vixen</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="sell-page">
 <!-- NAV -->
 <header class="nav-wrapper">
   <!-- TOP BAR -->
   <div class="nav-top">
-   <div class="logo">
-  <img src="images/logovv.png" alt="Vintage Vixen logo">
-</div>
+    <div class="logo">
+      <img src="images/logovv.png" alt="Vintage Vixen logo">
+    </div>
   </div>
 
   <!-- BOTTOM BAR -->
   <div class="nav-bottom">
     <nav class="links">
       <li><a href="index.html">Home</a></li>
-    <li><a href="shop.html">Shop</a></li>
-    <li><a href="sell.html">Sell</a></li>
-    <li><a href="contact.html">Contact</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="sell.html">Sell</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </nav>
   </div>
 </header>
-<main>
-    <!-- SELL HERO SECTION -->
-<section class="sell-hero">
-  <div class="sell-hero-content">
-    <h1>Sell With Vintage Vixen</h1>
-    <p>Turn your timeless pieces into curated treasures.</p>
-  </div>
-</section>
+
+<!-- HERO SPOTLIGHT -->
+<section class="sell-spotlight-full">
   <h1>Sell With Vintage Vixen</h1>
-
-  <section>
-    <h2>How It Works</h2>
-    <ol>
-      <li>Apply to sell your items</li>
-      <li>Get verified</li>
-      <li>Ship your pieces</li>
-    </ol>
-  </section>
-<section class="sell-highlight">
-  <div class="highlight-card">
-    <h3>Why Sell With Us?</h3>
-    <p>
-      We spotlight curated vintage pieces and connect them with a community
-      that values timeless fashion and luxury resale.
-    </p>
-  </div>
 </section>
-  <form>
-    <h3>Seller Application</h3>
-    <input type="text" placeholder="Full Name">
-    <input type="email" placeholder="Email">
-    <input type="text" placeholder="Item Description">
-    <select>
-      <option>Condition</option>
-      <option>Excellent</option>
-      <option>Good</option>
-      <option>Fair</option>
-    </select>
-    <button class="btn">Submit Application</button>
-  </form>
-</main>
 
+<!-- BACKGROUND WRAPPER FOR STEPS + FORM -->
+<section class="sell-background">
+
+  <!-- HOW IT WORKS / STEPS -->
+  <section class="sell-steps">
+    <h2>How It Works</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <span>Step 1</span>
+        <h3>Apply to Sell Your Items</h3>
+        <p>Fill out our seller application and tell us about your pieces.</p>
+      </div>
+      <div class="step-card">
+        <span>Step 2</span>
+        <h3>Get Verified</h3>
+        <p>We review your application and approve your account to start selling.</p>
+      </div>
+      <div class="step-card">
+        <span>Step 3</span>
+        <h3>Ship Your Pieces</h3>
+        <p>Send your items to Vintage Vixen and watch them go live in our shop!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELLER APPLICATION FORM -->
+  <section class="sell-form">
+    <form>
+      <h2>Seller Application</h2>
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Item Description">
+      <select>
+        <option>Condition</option>
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Fair</option>
+      </select>
+      <button class="btn">Submit Application</button>
+    </form>
+  </section>
+
+</section>
 </body>
 </html>

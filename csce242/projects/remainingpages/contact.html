@@ -2,57 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Us | Vintage Vixen</title>
+  <title>Contact | Vintage Vixen</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- NAV -->
+
 <header class="nav-wrapper">
-  <!-- TOP BAR -->
   <div class="nav-top">
-   <div class="logo">
-  <img src="images/logovv.png" alt="Vintage Vixen logo">
-</div>
+    <div class="logo">
+      <img src="images/logovv.png" alt="Vintage Vixen logo">
+    </div>
   </div>
 
-  <!-- BOTTOM BAR -->
   <div class="nav-bottom">
     <nav class="links">
       <li><a href="index.html">Home</a></li>
-    <li><a href="shop.html">Shop</a></li>
-    <li><a href="sell.html">Sell</a></li>
-    <li><a href="contact.html">Contact</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="sell.html">Sell</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </nav>
   </div>
 </header>
-<main>
-  <h1>Contact Us</h1>
-  <p style="text-align:center;">We’d love to hear from you 💖</p>
 
-  <form>
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <textarea rows="5" placeholder="Message"></textarea>
-    <button class="btn">Send Message</button>
-  </form>
-  <!-- CONTACT INFO SECTION -->
-<section class="contact-info">
-  <div class="contact-card">
-    <h3>Email</h3>
-    <p>support@vintagevixen.com</p>
-  </div>
-
-  <div class="contact-card">
-    <h3>Business Hours</h3>
-    <p>Monday – Friday</p>
-    <p>9:00 AM – 6:00 PM EST</p>
-  </div>
-
-  <div class="contact-card">
-    <h3>Follow Us</h3>
-    <p>Instagram • TikTok • Pinterest</p>
+<!-- CONTACT HERO -->
+<section class="page-hero contact-hero">
+  <div class="hero-overlay">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you.</p>
   </div>
 </section>
+
+<main class="page-content">
+
+  <section class="contact-section">
+    <form class="contact-form">
+      <h2>Send a Message</h2>
+
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+
+      <button class="btn">Send Message</button>
+    </form>
+  </section>
+
 </main>
 
 </body>
