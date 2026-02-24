@@ -548,7 +548,7 @@ form select:focus {
 }
 
 .look-card img {
-  width: 100%;
+  width: 150%;
   height: 950px;
   object-fit: cover;
   border-radius: 6px;
