@@ -18,7 +18,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(255,255,255,0.35);
   text-align: center;
   padding: 40px;
 }
@@ -27,6 +26,7 @@
   max-width: 700px;
   font-size: 70px;
   margin-bottom: 10px;
+  color: var(--white);
 }
 
 .hero-overlay p {
@@ -64,7 +64,7 @@
 /* SELL */
 .sell {
   background: var(--black);
-  color: var(--white);
+  color: var(--pink-dark);
   padding: 80px 60px;
   text-align: center;
 }
