@@ -1,0 +1,385 @@
+/* =========================
+   VARIABLES
+========================= */
+:root {
+  --pink-light: #f8e6ea;
+  --pink-dark: #d89ab0;
+  --white: #ffffff;
+  --black: #000000;
+  --gold: #b89b5e;
+  --text: #4a2c2a;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+body {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  background: var(--white);
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   NAV
+========================= */
+.nav-top {
+  background: #ffeaea;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.nav-bottom {
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  font-size: 13px;
+}
+
+/* =========================
+   SHOP HEADER
+========================= */
+.shop-header {
+  background: var(--pink-light);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--pink-dark);
+}
+
+.shop-header h1 {
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.shop-header h2 {
+  letter-spacing: 4px;
+  margin-bottom: 2px;
+}
+
+.shop-header p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* =========================
+   SHOP LAYOUT
+========================= */
+.shop-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+  padding: 40px 60px;
+  align-items: flex-start;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.shop-sidebar h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.shop-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.shop-sidebar li {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--pink-dark);
+  color: var(--white);
+  border-radius: 30px;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.product-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 200px;
+  border: 2px solid rgb(217, 217, 226);
+  border-radius: 8px;
+}
+
+.product-card img {
+  width: 50%;
+  border-radius: 8px;
+}
+
+.product-card h4 {
+  margin: 10px 0 4px;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 13px;
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+main {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+main p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input,
+form textarea {
+  padding: 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--pink-dark);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(216, 154, 176, 0.2);
+}
+
+.contact-info {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+}
+
+.contact-card {
+  flex: 1;
+  padding: 25px;
+  background: #fafafa;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .links {
+    gap: 60px;
+  }
+}
+/* =========================
+   SELL PAGE
+========================= */
+
+/* HERO SPOTLIGHT */
+.sell-hero {
+  height: 400px;
+  padding: 0 80px;
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+              url("images/sell-hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.sell-hero-content {
+  max-width: 600px;
+  color: white;
+}
+
+.sell-hero-content h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.sell-hero-content p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* HOW IT WORKS - WIDER LAYOUT */
+main section {
+  margin: 100px 80px;
+}
+
+main h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+/* Spread the steps horizontally */
+ol {
+  display: flex;
+  justify-content: space-between;
+  list-style-position: inside;
+  padding: 0;
+  gap: 40px;
+}
+
+ol li {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* HIGHLIGHT CARD - NOT CENTERED */
+.sell-highlight {
+  margin: 100px 80px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.highlight-card {
+  max-width: 500px;
+  padding: 50px;
+  background: var(--pink-light);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+}
+
+/* FORM - SPLIT LAYOUT */
+form {
+  margin: 100px 80px;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+form h3 {
+  grid-column: span 2;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+form input,
+form select {
+  padding: 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+form button {
+  grid-column: span 2;
+  justify-self: start;
+}
+@media (max-width: 768px) {
+
+  .sell-hero {
+    padding: 0 30px;
+    height: 300px;
+  }
+
+  main section {
+    margin: 60px 30px;
+  }
+
+  ol {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sell-highlight {
+    margin: 60px 30px;
+    justify-content: center;
+  }
+
+  form {
+    margin: 60px 30px;
+    grid-template-columns: 1fr;
+  }
+
+  form h3,
+  form button {
+    grid-column: span 1;
+  }
+}
