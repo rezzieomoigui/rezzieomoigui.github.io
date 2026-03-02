@@ -38,16 +38,43 @@ a {
   height: 70px;
 }
 
-.nav-bottom {
-  border-top: 1px solid #eee;
-  padding: 20px 0;
-}
-
-.links {
+.nav-bottom .links ul {
+  list-style: none; /* removes default bullets */
   display: flex;
   justify-content: center;
   gap: 120px;
+  padding: 0;
+  margin: 0;
   font-size: 13px;
+}
+.nav-bottom {
+  border-top: 1px solid #eee;
+  padding: 12px 0;   /* perfect middle ground */
+}
+.nav-bottom .links li {
+  position: relative;
+  padding-left: 18px;
+}
+
+/* Heart bullet */
+.nav-bottom .links li::before {
+  content: "♡";
+  position: absolute;
+  left: 0;
+  color: #d0a3b0; /* soft pink */
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-bottom .links a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.nav-bottom .links a:hover {
+  color: #d0a3b0;
 }
 
 /* =========================

@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(255,255,255,0.35);
+  background: rgba(138, 133, 133, 0.042);
   text-align: center;
   padding: 40px;
 }
@@ -65,14 +65,114 @@
 /* SELL */
 .sell {
   background: var(--black);
-  color: var(--pink-dark);
-  padding: 80px 60px;
+  padding: 100px 60px;
   text-align: center;
+}
+
+.sell h2 {
+  color: var(--pink-light);
+  font-size: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.sell-sub {
+  color: var(--pink-dark);
+  margin-bottom: 60px;
+  letter-spacing: 3px;
 }
 
 .sell-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 40px;
+  gap: 50px;
+}
+
+.sell-box {
+  background: #ffeaea;
+  padding: 40px 30px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.sell-box:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 192, 203, 0.1);
+}
+
+.sell-box img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.sell-box h3 {
+  color: var(--pink-dark);
+  font-size: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.sell-box p {
+  color: #000000;
+  font-size: 14px;
+}
+ /* FOOTER */
+.footer {
+  background: #ffffff;
+  color: black;
+  padding: 80px 60px 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+.footer h3 {
+  color: var(--pink-dark);
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.footer h4 {
+  color: var(--pink-dark);
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer ul li a:hover {
+  color: var(--pink-light);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
 }
