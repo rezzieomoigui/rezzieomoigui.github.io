@@ -134,7 +134,42 @@
     </div>
 
   </div>
+<section class="mood-section">
 
+  <h2>Choose Your Vixen Mood 💋</h2>
+
+  <div class="mood-buttons">
+    <button onclick="setMood('glam')">✨ Glam</button>
+    <button onclick="setMood('soft')">🎀 Soft Girl</button>
+    <button onclick="setMood('boss')">💎 Boss Babe</button>
+  </div>
+
+  <div class="mood-display">
+    <p id="mood-text">Select your vibe to unlock your styling energy.</p>
+  </div>
+
+</section>
+<script>
+function setMood(mood) {
+  const text = document.getElementById("mood-text");
+  const section = document.querySelector(".mood-section");
+
+  if (mood === "glam") {
+    text.innerText = "Full glam energy. Think satin, heels, and main character entrances.";
+    section.style.background = "linear-gradient(to right, #ffd6ec, #ffeaea)";
+  }
+
+  if (mood === "soft") {
+    text.innerText = "Soft angelic vibes. Baby tees, glossed lips, and pastel dreams.";
+    section.style.background = "linear-gradient(to right, #fff0f5, #ffe4ec)";
+  }
+
+  if (mood === "boss") {
+    text.innerText = "Confident and unstoppable. Structured silhouettes and power walks only.";
+    section.style.background = "linear-gradient(to right, #fce4ff, #ffeaea)";
+  }
+}
+</script>
   <div class="footer-bottom">
     <p>© 2026 Vintage Vixen. All rights reserved.</p>
   </div>
