@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Time</title>
+
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="title">Classes</h1>
+  <h2 class="subtitle">Music Time</h2>
+
+  <!-- Song Gallery -->
+  <div id="songGallery" class="gallery"></div>
+
+  <!-- Modal -->
+  <div id="songModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top modal-content">
+      <header class="w3-container modal-header">
+        <span onclick="closeModal()" class="w3-button w3-display-topright">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalArtist"></p>
+      </header>
+
+      <div class="w3-container modal-body">
+        <iframe id="modalVideo" width="100%" height="315"
+          src=""
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+
+        <p id="modalAlbum"></p>
+        <p id="modalGenre"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
