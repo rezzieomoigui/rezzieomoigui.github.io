@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Zipper Top",
+      "price": 30,
+      "category": "Tops",
+      "size": ["S", "M", "L"],
+      "image": "images/zipperteeprice.png",
+      "page": "product-zipper.html",
+      "description": "Vintage inspired zipper top with a bold fitted look."
+    },
+    {
+      "id": 2,
+      "name": "Graphic Tee",
+      "price": 22,
+      "category": "Graphic Tees",
+      "size": ["XS", "S", "M", "L"],
+      "image": "images/graphicteepricing.png",
+      "page": "product-graphic.html",
+      "description": "Classic vintage graphic tee perfect for casual outfits."
+    },
+    {
+      "id": 3,
+      "name": "Low Rise Denim",
+      "price": 42,
+      "category": "Jeans",
+      "size": ["S", "M", "L"],
+      "image": "images/lowrise.png",
+      "page": "product-jeans.html",
+      "description": "Y2K inspired low rise denim jeans."
+    },
+    {
+      "id": 4,
+      "name": "Kitten Heels",
+      "price": 212,
+      "category": "Accessories",
+      "size": ["6", "7", "8", "9"],
+      "image": "images/heels.png",
+      "page": "product-heels.html",
+      "description": "Elegant kitten heels that elevate any vintage look."
+    }
+  ]
+}

@@ -234,9 +234,9 @@
 
 /* center and enlarge video */
 .runway-video iframe {
-  width: 95%;
+  width: 250%;
   max-width: 1000px;
-  height: 560px;
+  height: 800px;
   border: none;
   display: block;
   margin: 0 auto;
