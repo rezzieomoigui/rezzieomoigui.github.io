@@ -219,3 +219,25 @@
   max-width: 500px;
   margin: 0 auto;
 }
+/* RUNWAY VIDEO */
+
+.runway-video {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.runway-video h2 {
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  font-size: 28px;
+}
+
+/* center and enlarge video */
+.runway-video iframe {
+  width: 95%;
+  max-width: 1000px;
+  height: 560px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}

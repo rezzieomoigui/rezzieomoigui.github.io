@@ -672,7 +672,11 @@ form select:focus {
 .contact-form-lux h2 {
   margin-bottom: 10px;
 }
-
+#form-status{
+  margin-top:10px;
+  font-size:14px;
+  color:var(--gold);
+}
 
 /* =========================
    SELL PAGE

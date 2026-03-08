@@ -1,101 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Vintage Vixen</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Contact | Vintage Vixen</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body class="contact-page">
 
 <header class="nav-wrapper">
-  <div class="nav-top">
-    <div class="logo">
-      <img src="images/logovv.png" alt="Vintage Vixen logo">
-    </div>
-  </div>
 
-  <div class="nav-bottom">
+<div class="nav-top">
+<div class="logo">
+<img src="images/logovv.png" alt="Vintage Vixen logo">
+</div>
+</div>
+
+<div class="nav-bottom">
 <nav class="links">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="shop.html">Shop</a></li>
-    <li><a href="sell.html">Sell</a></li>
-    <li><a href="styletips.html">Style Tips</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="sell.html">Sell</a></li>
+<li><a href="styletips.html">Style Tips</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 </nav>
-  </div>
+</div>
+
 </header>
+
 
 <!-- HERO -->
 <section class="contact-hero-lux">
-  <div class="contact-hero-content">
-    <h1>Get In Touch</h1>
-    <p>
-      Questions, collaborations, or styling inquiries — we’re here to help.
-      Join the Vixen community and stay connected with exclusive drops.
-    </p>
-  </div>
+
+<div class="contact-hero-content">
+
+<h1>Get In Touch</h1>
+
+<p>
+Questions, collaborations, or styling inquiries — we’re here to help.
+Join the Vixen community and stay connected with exclusive drops.
+</p>
+
+</div>
+
 </section>
+
 
 <!-- CONTACT CONTENT -->
 <section class="contact-container">
 
-  <!-- INFO CARDS -->
-  <div class="contact-info-grid">
+<!-- INFO CARDS -->
+<div class="contact-info-grid">
 
-    <div class="contact-info-card">
-      <h3>Email</h3>
-      <p>support@vintagevixen.com</p>
-      <span>We respond within 24 hours</span>
-    </div>
+<div class="contact-info-card">
+<h3>Email</h3>
+<p>support@vintagevixen.com</p>
+<span>We respond within 24 hours</span>
+</div>
 
-    <div class="contact-info-card">
-      <h3>Instagram</h3>
-      <p>@vintagevixen</p>
-      <span>Tag us to be featured</span>
-    </div>
+<div class="contact-info-card">
+<h3>Instagram</h3>
+<p>@vintagevixen</p>
+<span>Tag us to be featured</span>
+</div>
 
-    <div class="contact-info-card">
-      <h3>Business</h3>
-      <p>Partnership & Press</p>
-      <span>collab@vintagevixen.com</span>
-    </div>
+<div class="contact-info-card">
+<h3>Business</h3>
+<p>Partnership & Press</p>
+<span>collab@vintagevixen.com</span>
+</div>
 
-  </div>
+</div>
 
-  <!-- FORM + SIDE TEXT -->
-  <div class="contact-main-grid">
 
-    <div class="contact-text">
-      <h2>We’d Love to Hear From You</h2>
-      <p>
-        Whether you're searching for a dream vintage piece, need help with an
-        order, or want to collaborate, our team is always happy to connect.
-        Vintage Vixen is built on community, confidence, and timeless style.
-      </p>
+<!-- FORM + TEXT -->
+<div class="contact-main-grid">
 
-      <div class="contact-divider"></div>
+<div class="contact-text">
 
-      <p class="contact-note">
-        Please allow 1–2 business days for responses during peak launch periods.
-      </p>
-    </div>
+<h2>We’d Love to Hear From You</h2>
 
-    <form class="contact-form-lux">
-      <h2>Send a Message</h2>
+<p>
+Whether you're searching for a dream vintage piece, need help with an
+order, or want to collaborate, our team is always happy to connect.
+Vintage Vixen is built on community, confidence, and timeless style.
+</p>
 
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <textarea placeholder="Your Message" rows="6" required></textarea>
+<div class="contact-divider"></div>
 
-      <button class="btn">Send Message</button>
-    </form>
+<p class="contact-note">
+Please allow 1–2 business days for responses during peak launch periods.
+</p>
 
-  </div>
+</div>
+
+
+<!-- CONTACT FORM -->
+<form
+class="contact-form-lux"
+id="contact-form"
+action="https://formsubmit.co/omoiguiiriagbonse@gmail.com"
+method="POST"
+>
+
+<h2>Send a Message</h2>
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+<button class="btn">Send Message</button>
+
+<p id="form-status"></p>
+
+</form>
+
+</div>
 
 </section>
+
+
+<script>
+
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+form.addEventListener("submit", async function(event){
+
+event.preventDefault();
+
+const data = new FormData(form);
+
+try{
+
+const response = await fetch(form.action,{
+method:"POST",
+body:data
+});
+
+if(response.ok){
+
+status.innerText="✨ Message sent successfully! We'll get back to you soon.";
+form.reset();
+
+}else{
+
+status.innerText="⚠️ Something went wrong. Please try again.";
+
+}
+
+}
+
+catch(error){
+
+status.innerText="⚠️ Network error. Please try again later.";
+
+}
+
+});
+
+</script>
 
 </body>
 </html>
