@@ -1,44 +1,84 @@
 {
   "products": [
     {
-      "id": 1,
+      "_id": 1,
       "name": "Zipper Top",
       "price": 30,
       "category": "Tops",
-      "size": ["S", "M", "L"],
-      "image": "images/zipperteeprice.png",
-      "page": "product-zipper.html",
-      "description": "Vintage inspired zipper top with a bold fitted look."
+      "size": "S-M-L",
+      "brand": "Vintage Vixen",
+      "img_name": "images/zipperteeprice.png",
+      "page": "product-zipper.html"
     },
     {
-      "id": 2,
+      "_id": 2,
       "name": "Graphic Tee",
       "price": 22,
       "category": "Graphic Tees",
-      "size": ["XS", "S", "M", "L"],
-      "image": "images/graphicteepricing.png",
-      "page": "product-graphic.html",
-      "description": "Classic vintage graphic tee perfect for casual outfits."
+      "size": "XS-S-M-L",
+      "brand": "Vintage Vixen",
+      "img_name": "images/graphicteepricing.png",
+      "page": "product-graphic.html"
     },
     {
-      "id": 3,
+      "_id": 3,
       "name": "Low Rise Denim",
       "price": 42,
       "category": "Jeans",
-      "size": ["S", "M", "L"],
-      "image": "images/lowrise.png",
-      "page": "product-jeans.html",
-      "description": "Y2K inspired low rise denim jeans."
+      "size": "S-M-L",
+      "brand": "Vintage Vixen",
+      "img_name": "images/lowrise.png",
+      "page": "product-jeans.html"
     },
     {
-      "id": 4,
+      "_id": 4,
       "name": "Kitten Heels",
       "price": 212,
       "category": "Accessories",
-      "size": ["6", "7", "8", "9"],
-      "image": "images/heels.png",
-      "page": "product-heels.html",
-      "description": "Elegant kitten heels that elevate any vintage look."
+      "size": "6-9",
+      "brand": "Vintage Vixen",
+      "img_name": "images/heels.png",
+      "page": "product-heels.html"
+    },
+    {
+      "_id": 5,
+      "name": "Vintage Mini Skirt",
+      "price": 38,
+      "category": "Bottoms",
+      "size": "S-M",
+      "brand": "Vintage Vixen",
+      "img_name": "images/skirt.jpg",
+      "page": "product-skirt.html"
+    },
+    {
+      "_id": 6,
+      "name": "Y2K Sunglasses",
+      "price": 18,
+      "category": "Accessories",
+      "size": "One Size",
+      "brand": "Vintage Vixen",
+      "img_name": "images/sunglasses.jpg",
+      "page": "product-sunglasses.html"
+    },
+    {
+      "_id": 7,
+      "name": "Baby Tee",
+      "price": 26,
+      "category": "Tops",
+      "size": "XS-S-M",
+      "brand": "Vintage Vixen",
+      "img_name": "images/babytee.jpg",
+      "page": "product-babytee.html"
+    },
+    {
+      "_id": 8,
+      "name": "Vintage Shoulder Bag",
+      "price": 55,
+      "category": "Accessories",
+      "size": "One Size",
+      "brand": "Vintage Vixen",
+      "img_name": "images/shoulderbag.jpg",
+      "page": "product-bag.html"
     }
   ]
 }

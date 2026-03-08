@@ -12,7 +12,7 @@ fetch("products.json")
         <a href="${product.page}" class="product-link">
           <div class="product-card">
             <div class="product-image">
-              <img src="${product.image}" alt="${product.name}">
+              <img src="${product.img_name}" alt="${product.name}">
             </div>
 
             <div class="product-info">
