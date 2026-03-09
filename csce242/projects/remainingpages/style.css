@@ -707,7 +707,7 @@ form select:focus {
 }
 
 .sell-steps {
-  padding: 150px 12%;
+  padding: 80px 12%;
 }
 
 .steps-grid {
@@ -729,12 +729,13 @@ form select:focus {
 }
 
 .sell-form {
-  padding: 150px 12%;
+  padding: 80px 12%;
 }
 
 .sell-form form {
   max-width: 900px;
   display: grid;
+  margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
 }
