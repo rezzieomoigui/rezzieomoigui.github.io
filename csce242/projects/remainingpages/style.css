@@ -339,7 +339,15 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 80px;
 }
-
+/* Product text alignment fix */
+.product-summary,
+.product-summary p,
+.product-description-section,
+.product-description-section p,
+.product-details-section,
+.product-details-section li {
+  text-align: left;
+}
 /* LEFT COLUMN */
 
 .product-left {
@@ -738,6 +746,9 @@ form select:focus {
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
+  background: #ffeaea;
+  padding: 40px;
+  border-radius: 20px;
 }
 
 .sell-form h2 {
